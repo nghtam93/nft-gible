@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bids",
+  "info": {
+    "name": "bid"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "bids",
+      "dominant": true
+    },
+    "cryptoCost": {
+      "type": "string"
+    },
+    "cryptoType": {
+      "type": "string",
+      "default": "ETH"
+    },
+    "nfts": {
+      "via": "bids",
+      "collection": "nft"
+    }
+  }
+}

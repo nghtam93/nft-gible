@@ -1,0 +1,95 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nfts",
+  "info": {
+    "name": "nft",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "cryptoCost": {
+      "type": "string"
+    },
+    "cryptoType": {
+      "type": "enumeration",
+      "enum": [
+        "ETH",
+        "BTC",
+        "ADA",
+        "BNB",
+        "USDT",
+        "SOL",
+        "XRP"
+      ]
+    },
+    "size": {
+      "type": "string",
+      "default": "3000x3000"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "collectionName": {
+      "type": "string",
+      "default": "Rose Gold"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "nfts"
+    },
+    "categories": {
+      "collection": "categories",
+      "via": "nfts",
+      "dominant": true
+    },
+    "bids": {
+      "collection": "bid",
+      "via": "nfts",
+      "dominant": true
+    },
+    "auctionEnds": {
+      "type": "datetime"
+    },
+    "itemOwner": {
+      "type": "string"
+    },
+    "itemOwnerPhoto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "favorites": {
+      "via": "nft",
+      "collection": "favorite"
+    },
+    "auctionImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
