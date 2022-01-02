@@ -93,11 +93,11 @@ const Navbar = () => {
               >
                 <ul className='navbar-nav m-auto'>
                   <li className='nav-item'>
-                    <a href='#' className='nav-link active'>
+                    <a href='/' className='nav-link active'>
                       Home
-                      <i className='ri-arrow-down-s-line'></i>
+                      {/* <i className='ri-arrow-down-s-line'></i> */}
                     </a>
-                    <ul className='dropdown-menu'>
+                    {/* <ul className='dropdown-menu'>
                       <li className='nav-item'>
                         <Link href='/' activeClassName='active'>
                           <a className='nav-link active'>Home One</a>
@@ -113,7 +113,7 @@ const Navbar = () => {
                           <a className='nav-link'>Home Three</a>
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
 
                   <li className='nav-item'>
@@ -128,15 +128,15 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className='nav-item'>
-                        <Link href='/discover-1' activeClassName='active'>
-                          <a className='nav-link'>Discover Style One</a>
+                        <Link href='/discover' activeClassName='active'>
+                          <a className='nav-link'>Discover</a>
                         </Link>
                       </li>
-                      <li className='nav-item'>
+                      {/* <li className='nav-item'>
                         <Link href='/discover-2' activeClassName='active'>
                           <a className='nav-link'>Discover Style Two</a>
                         </Link>
-                      </li>
+                      </li> */}
                       <li className='nav-item'>
                         <Link href='/item-details' activeClassName='active'>
                           <a className='nav-link'>Item Details</a>
@@ -158,17 +158,17 @@ const Navbar = () => {
                     </a>
                     <ul className='dropdown-menu'>
                       <li className='nav-item'>
-                        <Link href='/collection' activeClassName='active'>
-                          <a className='nav-link'>Collection</a>
+                        <Link href='/drops' activeClassName='active'>
+                          <a className='nav-link'>Drops</a>
                         </Link>
                       </li>
 
                       <li className='nav-item'>
                         <Link
-                          href='/create-collection'
+                          href='/mint'
                           activeClassName='active'
                         >
-                          <a className='nav-link'>Create Collection</a>
+                          <a className='nav-link'>Mint</a>
                         </Link>
                       </li>
 
@@ -179,12 +179,12 @@ const Navbar = () => {
                       </li>
 
                       <li className='nav-item'>
-                        <Link href='/author-profile' activeClassName='active'>
-                          <a className='nav-link'>Author Profile</a>
+                        <Link href='/profile' activeClassName='active'>
+                          <a className='nav-link'>Profile</a>
                         </Link>
                       </li>
 
-                      <li className='nav-item'>
+                      {/* <li className='nav-item'>
                         <Link href='/team' activeClassName='active'>
                           <a className='nav-link'>Team</a>
                         </Link>
@@ -194,9 +194,9 @@ const Navbar = () => {
                         <Link href='/testimonials' activeClassName='active'>
                           <a className='nav-link'>Testimonials</a>
                         </Link>
-                      </li>
+                      </li> */}
 
-                      <li className='nav-item'>
+                      {/* <li className='nav-item'>
                         <a href='#' className='nav-link'>
                           User
                           <i className='ri-arrow-down-s-line'></i>
@@ -221,9 +221,9 @@ const Navbar = () => {
                             </Link>
                           </li>
                         </ul>
-                      </li>
+                      </li> */}
 
-                      <li className='nav-item'>
+                      {/* <li className='nav-item'>
                         <Link href='/terms-condition' activeClassName='active'>
                           <a className='nav-link'>Terms & Conditions</a>
                         </Link>
@@ -245,11 +245,11 @@ const Navbar = () => {
                         <Link href='/coming-soon' activeClassName='active'>
                           <a className='nav-link'>Coming Soon</a>
                         </Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </li>
 
-                  <li className='nav-item'>
+                  {/* <li className='nav-item'>
                     <a href='#' className='nav-link'>
                       Community
                       <i className='ri-arrow-down-s-line'></i>
@@ -314,19 +314,19 @@ const Navbar = () => {
                         </Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
 
-                  <li className='nav-item'>
+                  {/* <li className='nav-item'>
                     <Link href='/contact' activeClassName='active'>
                       <a className='nav-link'>Contact Us</a>
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
 
                 <div className='others-options'>
                   <ul className='optional-item-list'>
                     <li>
-                      <Link href='/create-collection' activeClassName='active'>
+                      <Link href='/mint' activeClassName='active'>
                         <a>Create</a>
                       </Link>
                     </li>
@@ -379,7 +379,7 @@ const Navbar = () => {
                     <ul className='optional-item-list'>
                       <li>
                         <Link
-                          href='/create-collection'
+                          href='/mint'
                           activeClassName='active'
                         >
                           <a>Create</a>

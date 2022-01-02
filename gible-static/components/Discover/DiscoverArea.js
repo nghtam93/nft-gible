@@ -98,7 +98,7 @@ const DiscoverArea = () => {
                         </Link>
                       </div>
 
-                      <Link href='/author-profile'>
+                      <Link href='/profile'>
                         <a
                           className='featured-user-option'
                         >
@@ -156,7 +156,7 @@ const DiscoverArea = () => {
                           </a>
                         </Link>
                       </div>
-                      <Link href='/author-profile'>
+                      <Link href='/profile'>
                         <a
                           className='featured-user-option'
                         >
@@ -214,7 +214,7 @@ const DiscoverArea = () => {
                           </a>
                         </Link>
                       </div>
-                      <Link href='/author-profile'>
+                      <Link href='/profile'>
                         <a
                           className='featured-user-option'
                         >
@@ -268,7 +268,7 @@ const DiscoverArea = () => {
                           </a>
                         </Link>
                       </div>
-                      <Link href='/author-profile'>
+                      <Link href='/profile'>
                         <a
                           className='featured-user-option'
                         >
@@ -322,7 +322,7 @@ const DiscoverArea = () => {
                           </a>
                         </Link>
                       </div>
-                      <Link href='/author-profile'>
+                      <Link href='/profile'>
                         <a
                           className='featured-user-option'
                         >
@@ -376,7 +376,7 @@ const DiscoverArea = () => {
                           </a>
                         </Link>
                       </div>
-                      <Link href='/author-profile'>
+                      <Link href='/profile'>
                         <a
                           className='featured-user-option'
                         >
@@ -430,7 +430,7 @@ const DiscoverArea = () => {
                           </a>
                         </Link>
                       </div>
-                      <Link href='/author-profile'>
+                      <Link href='/profile'>
                         <a
                           className='featured-user-option'
                         >
@@ -484,7 +484,7 @@ const DiscoverArea = () => {
                           </a>
                         </Link>
                       </div>
-                      <Link href='/author-profile'>
+                      <Link href='/profile'>
                         <a
                           className='featured-user-option'
                         >
@@ -538,7 +538,7 @@ const DiscoverArea = () => {
                           </a>
                         </Link>
                       </div>
-                      <Link href='/author-profile'>
+                      <Link href='/profile'>
                         <a
                           className='featured-user-option'
                         >

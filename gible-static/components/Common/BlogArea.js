@@ -14,7 +14,7 @@ const BlogArea = () => {
 
             <div className='col-lg-4 col-md-4'>
               <div className='blog-btn text-end'>
-                <Link href='/blog-1'>
+                <Link href='/discover'>
                   <a className='default-btn border-radius-5'>Explore More</a>
                 </Link>
               </div>
@@ -31,7 +31,7 @@ const BlogArea = () => {
                     </a>
                   </Link>
                   <div className='blog-user'>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a className='blog-user-option'>
                         <img
                           src='../images/featured/featured-user2.jpg'
@@ -69,7 +69,7 @@ const BlogArea = () => {
                     </a>
                   </Link>
                   <div className='blog-user'>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a className='blog-user-option'>
                         <img
                           src='../images/featured/featured-user2.jpg'
@@ -110,7 +110,7 @@ const BlogArea = () => {
                     </a>
                   </Link>
                   <div className='blog-user'>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a className='blog-user-option'>
                         <img
                           src='../images/featured/featured-user3.jpg'

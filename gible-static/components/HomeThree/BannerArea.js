@@ -13,7 +13,7 @@ const BannerArea = () => {
               Accumsan sodales consectetur.
             </p>
             <div className='banner-btn'>
-              <Link href='/about'>
+              <Link href='/discover'>
                 <a className='default-btn border-radius-5'>Explore More</a>
               </Link>
 

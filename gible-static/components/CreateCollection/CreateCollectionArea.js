@@ -18,7 +18,7 @@ const CreateCollectionArea = () => {
                 </div>
 
                 <h3>
-                  <Link href='/author-profile'>
+                  <Link href='/profile'>
                     <a>Olivia Jenar</a>
                   </Link>
                 </h3>
@@ -114,63 +114,63 @@ const CreateCollectionArea = () => {
                     <h3>Choose Item Category</h3>
                     <ul>
                       <li>
-                        <Link href='/create-collection'>
+                        <Link href='/mint'>
                           <a target='_blank'>
                             Art
                           </a>
                         </Link>
                       </li>
                       <li>
-                        <Link href='/create-collection'>
+                        <Link href='/mint'>
                           <a target='_blank'>
                             Virtual Worlds
                           </a>
                         </Link>
                       </li>
                       <li>
-                        <Link href='/create-collection'>
+                        <Link href='/mint'>
                           <a target='_blank'>
                             Trending Cards
                           </a>
                         </Link>
                       </li>
                       <li>
-                        <Link href='/create-collection'>
+                        <Link href='/mint'>
                           <a target='_blank'>
                             Collectibles
                           </a>
                         </Link>
                       </li>
                       <li>
-                        <Link href='/create-collection'>
+                        <Link href='/mint'>
                           <a target='_blank'>
                             Music
                           </a>
                         </Link>
                       </li>
                       <li>
-                        <Link href='/create-collection'>
+                        <Link href='/mint'>
                           <a target='_blank'>
                             Games
                           </a>
                         </Link>
                       </li>
                       <li>
-                        <Link href='/create-collection'>
+                        <Link href='/mint'>
                           <a target='_blank'>
                             Domains
                           </a>
                         </Link>
                       </li>
                       <li>
-                        <Link href='/create-collection'>
+                        <Link href='/mint'>
                           <a target='_blank'>
                             Memes
                           </a>
                         </Link>
                       </li>
                       <li>
-                        <Link href='/create-collection'>
+                        <Link href='/mint'>
                           <a target='_blank'>
                             NFT Gifts
                           </a>

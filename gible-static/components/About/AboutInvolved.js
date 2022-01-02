@@ -23,7 +23,7 @@ const AboutInvolved = () => {
 									<li>
 										<a
 											href="https://www.google.com/"
-											target="_blank" 
+											target="_blank"
 											rel="noreferrer"
 										>
 											<i className="ri-google-fill"></i>
@@ -32,7 +32,7 @@ const AboutInvolved = () => {
 									<li>
 										<a
 											href="https://www.facebook.com/"
-											target="_blank" 
+											target="_blank"
 											rel="noreferrer"
 										>
 											<i className="ri-facebook-fill"></i>
@@ -41,7 +41,7 @@ const AboutInvolved = () => {
 									<li>
 										<a
 											href="https://www.instagram.com/"
-											target="_blank" 
+											target="_blank"
 											rel="noreferrer"
 										>
 											<i className="ri-instagram-fill"></i>
@@ -50,7 +50,7 @@ const AboutInvolved = () => {
 									<li>
 										<a
 											href="https://twitter.com/"
-											target="_blank" 
+											target="_blank"
 											rel="noreferrer"
 										>
 											<i className="ri-twitter-fill"></i>
@@ -59,7 +59,7 @@ const AboutInvolved = () => {
 									<li>
 										<a
 											href="https://www.linkedin.com/"
-											target="_blank" 
+											target="_blank"
 											rel="noreferrer"
 										>
 											<i className="ri-linkedin-fill"></i>
@@ -91,7 +91,7 @@ const AboutInvolved = () => {
 								<h3>
 									Become A <b>Charity Partner</b>
 								</h3>
-								<Link href="/create-collection">
+								<Link href="/mint">
 									<a className="default-btn">
 										Express Interest
 									</a>

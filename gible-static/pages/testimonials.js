@@ -37,7 +37,7 @@ const Testimonials = () => {
             <div className='col-lg-3 col-6'>
               <div className='team-card'>
                 <img src='../images/team/team2.jpg' alt='Images' />
-             
+
                 <h3>James Parker</h3>
                 <span>Manage</span>
                 <p>Lorem ipsum dolor sit amet, elit Velit egestas mattis.</p>
@@ -56,7 +56,7 @@ const Testimonials = () => {
             <div className='col-lg-3 col-6'>
               <div className='team-card'>
                 <img src='../images/team/team4.jpg' alt='Images' />
-         
+
                 <h3>Amelia Rosia</h3>
                 <span>Founder</span>
                 <p>Lorem ipsum dolor sit amet, elit Velit egestas mattis.</p>
@@ -66,7 +66,7 @@ const Testimonials = () => {
             <div className='col-lg-3 col-6'>
               <div className='team-card'>
                 <img src='../images/team/team5.jpg' alt='Images' />
-         
+
                 <h3>Elpizo Choi</h3>
                 <span>CEO and Director</span>
                 <p>Lorem ipsum dolor sit amet, elit Velit egestas mattis.</p>
@@ -76,7 +76,7 @@ const Testimonials = () => {
             <div className='col-lg-3 col-6'>
               <div className='team-card'>
                 <img src='../images/team/team6.jpg' alt='Images' />
-         
+
                 <h3>Jesa Alverza</h3>
                 <span>Ex Director</span>
                 <p>Lorem ipsum dolor sit amet, elit Velit egestas mattis.</p>

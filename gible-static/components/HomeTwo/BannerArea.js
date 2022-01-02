@@ -90,7 +90,7 @@ const BannerArea = () => {
                   sodales consectetur.
                 </p>
                 <div className='banner-btn'>
-                  <Link href='/about'>
+                  <Link href='/discover'>
                     <a className='default-btn border-radius-5'>Explore More</a>
                   </Link>
                   <Link href='/add-wallet'>
@@ -113,7 +113,7 @@ const BannerArea = () => {
                           alt='Images'
                         />
                         <div className='banner-item-user'>
-                          <Link href='/author-profile'>
+                          <Link href='/profile'>
                             <a className='banner-item-user-option'>
                               <img
                                 src='../images/home-two/home-two-user1.jpg'
@@ -145,7 +145,7 @@ const BannerArea = () => {
                             </div>
                           </div>
                         </div>
-                        <Link href='/author-profile'>
+                        <Link href='/profile'>
                           <a className='place-btn'>Place Bid</a>
                         </Link>
                       </div>
@@ -158,7 +158,7 @@ const BannerArea = () => {
                           alt='Images'
                         />
                         <div className='banner-item-user'>
-                          <Link href='/author-profile'>
+                          <Link href='/profile'>
                             <a className='banner-item-user-option'>
                               <img
                                 src='../images/home-two/home-two-user2.jpg'
@@ -190,7 +190,7 @@ const BannerArea = () => {
                             </div>
                           </div>
                         </div>
-                        <Link href='/author-profile'>
+                        <Link href='/profile'>
                           <a className='place-btn'>Place Bid</a>
                         </Link>
                       </div>
@@ -203,7 +203,7 @@ const BannerArea = () => {
                           alt='Images'
                         />
                         <div className='banner-item-user'>
-                          <Link href='/author-profile'>
+                          <Link href='/profile'>
                             <a
                               className='banner-item-user-option'
                             >
@@ -237,7 +237,7 @@ const BannerArea = () => {
                             </div>
                           </div>
                         </div>
-                        <Link href='/author-profile'>
+                        <Link href='/profile'>
                           <a className='place-btn'>Place Bid</a>
                         </Link>
                       </div>

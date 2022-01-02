@@ -57,7 +57,7 @@ const AuctionArea = () => {
 						<div className="col-lg-4 col-md-6">
 							<div className="auction-card">
 								<div className="auction-card-img">
-									<Link href="/auction">
+									<Link href="/item-details">
 										<a>
 											<img
 												src="../images/auctions/auctions-style1.jpg"
@@ -66,7 +66,7 @@ const AuctionArea = () => {
 										</a>
 									</Link>
 									<div className="auction-card-user">
-										<Link href="/author-profile">
+										<Link href="/profile">
 											<a className="auction-card-user-option">
 												<img
 													src="../images/auctions/auctions-user1.jpg"
@@ -129,7 +129,7 @@ const AuctionArea = () => {
 										</a>
 									</Link>
 									<div className="auction-card-user">
-										<Link href="/author-profile">
+										<Link href="/profile">
 											<a className="auction-card-user-option">
 												<img
 													src="../images/auctions/auctions-user2.jpg"
@@ -192,7 +192,7 @@ const AuctionArea = () => {
 										</a>
 									</Link>
 									<div className="auction-card-user">
-										<Link href="/author-profile">
+										<Link href="/profile">
 											<a className="auction-card-user-option">
 												<img
 													src="../images/auctions/auctions-user3.jpg"
@@ -255,7 +255,7 @@ const AuctionArea = () => {
 										</a>
 									</Link>
 									<div className="auction-card-user">
-										<Link href="/author-profile">
+										<Link href="/profile">
 											<a className="auction-card-user-option">
 												<img
 													src="../images/auctions/auctions-user4.jpg"
@@ -318,7 +318,7 @@ const AuctionArea = () => {
 										</a>
 									</Link>
 									<div className="auction-card-user">
-										<Link href="/author-profile">
+										<Link href="/profile">
 											<a className="auction-card-user-option">
 												<img
 													src="../images/auctions/auctions-user5.jpg"
@@ -381,7 +381,7 @@ const AuctionArea = () => {
 										</a>
 									</Link>
 									<div className="auction-card-user">
-										<Link href="/author-profile">
+										<Link href="/profile">
 											<a className="auction-card-user-option">
 												<img
 													src="../images/auctions/auctions-user6.jpg"

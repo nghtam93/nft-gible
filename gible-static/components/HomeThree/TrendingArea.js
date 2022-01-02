@@ -94,7 +94,7 @@ const TrendingArea = () => {
                         <a>Les Immortal's</a>
                       </Link>
                     </h3>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a className='trending-user-option'>
                         <img
                           src='../images/trending/trending-user1.jpg'
@@ -138,7 +138,7 @@ const TrendingArea = () => {
                         <a>Industrial Revolution</a>
                       </Link>
                     </h3>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a className='trending-user-option'>
                         <img
                           src='../images/trending/trending-user2.jpg'
@@ -227,7 +227,7 @@ const TrendingArea = () => {
                         <a>Walking On Air</a>
                       </Link>
                     </h3>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a className='trending-user-option'>
                         <img
                           src='../images/trending/trending-user4.jpg'
@@ -271,7 +271,7 @@ const TrendingArea = () => {
                         <a>To Infinity</a>
                       </Link>
                     </h3>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a className='trending-user-option'>
                         <img
                           src='../images/trending/trending-user5.jpg'

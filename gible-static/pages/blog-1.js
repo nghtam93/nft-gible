@@ -31,7 +31,7 @@ const BlogOne = () => {
                     </a>
                   </Link>
                   <div className='blog-user'>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a className='blog-user-option'>
                         <img src='../images/blog/blog-user1.jpg' alt='Images' />
                         <span>Created by @Adison</span>
@@ -71,7 +71,7 @@ const BlogOne = () => {
                   </Link>
 
                   <div className='blog-user'>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a className='blog-user-option'>
                         <img src='../images/blog/blog-user2.jpg' alt='Images' />
                         <span>Created by @Evelyn</span>
@@ -111,7 +111,7 @@ const BlogOne = () => {
                   </Link>
 
                   <div className='blog-user'>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a className='blog-user-option'>
                         <img src='../images/blog/blog-user3.jpg' alt='Images' />
                         <span>Created by @Julian</span>
@@ -152,7 +152,7 @@ const BlogOne = () => {
                   </Link>
 
                   <div className='blog-user'>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a className='blog-user-option'>
                         <img src='../images/blog/blog-user4.jpg' alt='Images' />
                         <span>Created by @Evelyn</span>
@@ -192,7 +192,7 @@ const BlogOne = () => {
                   </Link>
 
                   <div className='blog-user'>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a className='blog-user-option'>
                         <img src='../images/blog/blog-user5.jpg' alt='Images' />
                         <span>Created by @Emilia</span>
@@ -232,7 +232,7 @@ const BlogOne = () => {
                   </Link>
 
                   <div className='blog-user'>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a className='blog-user-option'>
                         <img src='../images/blog/blog-user6.jpg' alt='Images' />
                         <span>Created by @Emilia</span>
@@ -272,7 +272,7 @@ const BlogOne = () => {
                   </Link>
 
                   <div className='blog-user'>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a className='blog-user-option'>
                         <img src='../images/blog/blog-user7.jpg' alt='Images' />
                         <span>Created by @Emilia</span>
@@ -314,7 +314,7 @@ const BlogOne = () => {
                   </Link>
 
                   <div className='blog-user'>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a className='blog-user-option'>
                         <img src='../images/blog/blog-user8.jpg' alt='Images' />
                         <span>Created by @Daniel</span>
@@ -354,7 +354,7 @@ const BlogOne = () => {
                   </Link>
 
                   <div className='blog-user'>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a className='blog-user-option'>
                         <img src='../images/blog/blog-user9.jpg' alt='Images' />
                         <span>Created by @Anvi</span>

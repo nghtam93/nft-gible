@@ -73,7 +73,7 @@ const InvolvedArea = () => {
                 <h3>
                   Become A <b>Charity Partner</b>
                 </h3>
-                <Link href='/create-collection'>
+                <Link href='/mint'>
                   <a className='default-btn'>
                     Express Interest
                   </a>

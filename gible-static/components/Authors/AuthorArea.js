@@ -1,5 +1,5 @@
 import React from 'react';
-import Pagination from '../Common/Pagination';
+// import Pagination from '../Common/Pagination';
 import Link from 'next/link'
 
 const AuthorArea = () => {
@@ -14,7 +14,7 @@ const AuthorArea = () => {
           <div className='row pt-45 justify-content-center'>
             <div className='col-lg-3 col-6'>
               <div className='author-card box-shadow'>
-                <Link href='/author-profile'>
+                <Link href='/profile'>
                   <a>
                     <img src='../images/author/author-img6.jpg' alt='Images' />
                   </a>
@@ -26,7 +26,7 @@ const AuthorArea = () => {
                   </div>
 
                   <h3>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a>Olivia Jenar</a>
                     </Link>
                   </h3>
@@ -65,7 +65,7 @@ const AuthorArea = () => {
 
             <div className='col-lg-3 col-6'>
               <div className='author-card box-shadow'>
-                <Link href='/author-profile'>
+                <Link href='/profile'>
                   <a>
                     <img src='../images/author/author-img7.jpg' alt='Images' />
                   </a>
@@ -77,7 +77,7 @@ const AuthorArea = () => {
                   </div>
 
                   <h3>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a>James Parker</a>
                     </Link>
                   </h3>
@@ -116,7 +116,7 @@ const AuthorArea = () => {
 
             <div className='col-lg-3 col-6'>
               <div className='author-card box-shadow'>
-                <Link href='/author-profile'>
+                <Link href='/profile'>
                   <a>
                     <img src='../images/author/author-img8.jpg' alt='Images' />
                   </a>
@@ -128,7 +128,7 @@ const AuthorArea = () => {
                   </div>
 
                   <h3>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a>Lucas Adison</a>
                     </Link>
                   </h3>
@@ -167,7 +167,7 @@ const AuthorArea = () => {
 
             <div className='col-lg-3 col-6'>
               <div className='author-card box-shadow'>
-                <Link href='/author-profile'>
+                <Link href='/profile'>
                   <a>
                     <img src='../images/author/author-img12.jpg' alt='Images' />
                   </a>
@@ -179,7 +179,7 @@ const AuthorArea = () => {
                   </div>
 
                   <h3>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a>Amelia Rosia</a>
                     </Link>
                   </h3>
@@ -218,7 +218,7 @@ const AuthorArea = () => {
 
             <div className='col-lg-3 col-6'>
               <div className='author-card box-shadow'>
-                <Link Link href='/author-profile'>
+                <Link Link href='/profile'>
                   <a>
                     <img src='../images/author/author-img1.jpg' alt='Images' />
                   </a>
@@ -226,11 +226,11 @@ const AuthorArea = () => {
                 <div className='content'>
                   <div className='author-user'>
                     <img src='../images/author/author-user5.jpg' alt='Images' />
-                    <i className='ri-check-line'></i>
+                    {/* <i className='ri-check-line'></i> */}
                   </div>
 
                   <h3>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a>Barb E. Dahl</a>
                     </Link>
                   </h3>
@@ -269,7 +269,7 @@ const AuthorArea = () => {
 
             <div className='col-lg-3 col-6'>
               <div className='author-card box-shadow'>
-                <Link href='/author-profile'>
+                <Link href='/profile'>
                   <a>
                     <img src='../images/author/author-img2.jpg' alt='Images' />
                   </a>
@@ -277,11 +277,11 @@ const AuthorArea = () => {
                 <div className='content'>
                   <div className='author-user'>
                     <img src='../images/author/author-user6.jpg' alt='Images' />
-                    <i className='ri-check-line'></i>
+                    {/* <i className='ri-check-line'></i> */}
                   </div>
 
                   <h3>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a>Biff Wellington</a>
                     </Link>
                   </h3>
@@ -320,7 +320,7 @@ const AuthorArea = () => {
 
             <div className='col-lg-3 col-6'>
               <div className='author-card box-shadow'>
-               <Link href='/author-profile'>
+               <Link href='/profile'>
                   <a>
                     <img src='../images/author/author-img3.jpg' alt='Images' />
                   </a>
@@ -328,11 +328,11 @@ const AuthorArea = () => {
                 <div className='content'>
                   <div className='author-user'>
                     <img src='../images/author/author-user7.jpg' alt='Images' />
-                    <i className='ri-check-line'></i>
+                    {/* <i className='ri-check-line'></i> */}
                   </div>
 
                   <h3>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a>Adam Zapel</a>
                     </Link>
                   </h3>
@@ -371,7 +371,7 @@ const AuthorArea = () => {
 
             <div className='col-lg-3 col-6'>
               <div className='author-card box-shadow'>
-                <Link href='/author-profile'>
+                <Link href='/profile'>
                   <a>
                     <img src='../images/author/author-img4.jpg' alt='Images' />
                   </a>
@@ -379,11 +379,11 @@ const AuthorArea = () => {
                 <div className='content'>
                   <div className='author-user'>
                     <img src='../images/author/author-user8.jpg' alt='Images' />
-                    <i className='ri-check-line'></i>
+                    {/* <i className='ri-check-line'></i> */}
                   </div>
 
                   <h3>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a>Orson Carte</a>
                     </Link>
                   </h3>
@@ -422,7 +422,7 @@ const AuthorArea = () => {
 
             <div className='col-lg-3 col-6'>
               <div className='author-card box-shadow'>
-                <Link Link href='/author-profile'>
+                <Link Link href='/profile'>
                   <a>
                     <img src='../images/author/author-img5.jpg' alt='Images' />
                   </a>
@@ -430,11 +430,11 @@ const AuthorArea = () => {
                 <div className='content'>
                   <div className='author-user'>
                     <img src='../images/author/author-user8.jpg' alt='Images' />
-                    <i className='ri-check-line'></i>
+                    {/* <i className='ri-check-line'></i> */}
                   </div>
 
                   <h3>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a>Ray Gunn</a>
                     </Link>
                   </h3>
@@ -473,7 +473,7 @@ const AuthorArea = () => {
 
             <div className='col-lg-3 col-6'>
               <div className='author-card box-shadow'>
-                <Link href='/author-profile'>
+                <Link href='/profile'>
                   <a>
                     <img src='../images/author/author-img9.jpg' alt='Images' />
                   </a>
@@ -481,11 +481,11 @@ const AuthorArea = () => {
                 <div className='content'>
                   <div className='author-user'>
                     <img src='../images/author/author-user9.jpg' alt='Images' />
-                    <i className='ri-check-line'></i>
+                    {/* <i className='ri-check-line'></i> */}
                   </div>
 
                   <h3>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a>Thomas Jon</a>
                     </Link>
                   </h3>
@@ -524,7 +524,7 @@ const AuthorArea = () => {
 
             <div className='col-lg-3 col-6'>
               <div className='author-card box-shadow'>
-                <Link href='/author-profile'>
+                <Link href='/profile'>
                   <a>
                     <img src='../images/author/author-img11.jpg' alt='Images' />
                   </a>
@@ -535,11 +535,11 @@ const AuthorArea = () => {
                       src='../images/author/author-user10.jpg'
                       alt='Images'
                     />
-                    <i className='ri-check-line'></i>
+                    {/* <i className='ri-check-line'></i> */}
                   </div>
 
                   <h3>
-                    <Link href='/author-profile'>
+                    <Link href='/profile'>
                       <a>Radil Hence</a>
                     </Link>
                   </h3>
@@ -578,7 +578,7 @@ const AuthorArea = () => {
 
             <div className='col-lg-3 col-6'>
               <div className='author-card box-shadow'>
-                <Link href='/author-profile'>
+                <Link href='/profile'>
                   <a>
                     <img src='../images/author/author-img12.jpg' alt='Images' />
                   </a>
@@ -589,11 +589,11 @@ const AuthorArea = () => {
                       src='../images/author/author-user11.jpg'
                       alt='Images'
                     />
-                    <i className='ri-check-line'></i>
+                    {/* <i className='ri-check-line'></i> */}
                   </div>
 
                   <h3>
-                  <Link href='/author-profile'>
+                  <Link href='/profile'>
                     <a>Anvi Jordan</a>
                   </Link>
                   </h3>
@@ -630,7 +630,7 @@ const AuthorArea = () => {
               </div>
             </div>
 
-            <Pagination />
+            {/* <Pagination /> */}
           </div>
         </div>
       </div>

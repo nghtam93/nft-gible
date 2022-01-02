@@ -81,7 +81,7 @@ const CollectionCard = () => {
                   </a>
                 </Link>
               </div>
-              <Link href='/author-profile'>
+              <Link href='/profile'>
                 <a className='featured-user-option'>
                   <img src='../images/featured/featured-user1.jpg' alt='Images' />
                   <span>Created by @Adison</span>
@@ -129,7 +129,7 @@ const CollectionCard = () => {
                   </a>
                 </Link>
               </div>
-              <Link href='/author-profile'>
+              <Link href='/profile'>
                 <a className='featured-user-option'>
                   <img src='../images/featured/featured-user2.jpg' alt='Images' />
                   <span>Created by @Adison</span>
@@ -177,7 +177,7 @@ const CollectionCard = () => {
                   </a>
                 </Link>
               </div>
-              <Link href='/author-profile'>
+              <Link href='/profile'>
                 <a className='featured-user-option'>
                   <img src='../images/featured/featured-user3.jpg' alt='Images' />
                   <span>Created by @Adison</span>
@@ -221,7 +221,7 @@ const CollectionCard = () => {
                   </a>
                 </Link>
               </div>
-              <Link href='/author-profile'>
+              <Link href='/profile'>
                 <a className='featured-user-option'>
                   <img src='../images/featured/featured-user4.jpg' alt='Images' />
                   <span>Created by @Adison</span>
@@ -265,7 +265,7 @@ const CollectionCard = () => {
                   </a>
                 </Link>
               </div>
-              <Link href='/author-profile'>
+              <Link href='/profile'>
                 <a className='featured-user-option'>
                   <img src='../images/featured/featured-user5.jpg' alt='Images' />
                   <span>Created by @Adison</span>
@@ -309,7 +309,7 @@ const CollectionCard = () => {
                   </a>
                 </Link>
               </div>
-              <Link href='/author-profile'>
+              <Link href='/profile'>
                 <a className='featured-user-option'>
                   <img src='../images/featured/featured-user6.jpg' alt='Images' />
                   <span>Created by @Adison</span>
@@ -353,7 +353,7 @@ const CollectionCard = () => {
                   </a>
                 </Link>
               </div>
-              <Link href='/author-profile'>
+              <Link href='/profile'>
                 <a className='featured-user-option'>
                   <img src='../images/featured/featured-user7.jpg' alt='Images' />
                   <span>Created by @Adison</span>
@@ -397,7 +397,7 @@ const CollectionCard = () => {
                   </a>
                 </Link>
               </div>
-              <Link href='/author-profile'>
+              <Link href='/profile'>
                 <a className='featured-user-option'>
                   <img src='../images/featured/featured-user8.jpg' alt='Images' />
                   <span>Created by @Adison</span>
@@ -441,7 +441,7 @@ const CollectionCard = () => {
                   </a>
                 </Link>
               </div>
-              <Link href='/author-profile'>
+              <Link href='/profile'>
                 <a className='featured-user-option'>
                   <img src='../images/featured/featured-user1.jpg' alt='Images' />
                   <span>Created by @Adison</span>

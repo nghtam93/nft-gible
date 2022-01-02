@@ -26,7 +26,7 @@ const AuthorArea = () => {
           <div className='row pt-45 justify-content-center'>
             <div className='col-lg-3 col-6'>
               <div className='author-card'>
-              <Link href='/author-profile'>
+              <Link href='/profile'>
                 <a>
                   <img src='../images/author/author-img1.jpg' alt='Images' />
                 </a>
@@ -37,7 +37,7 @@ const AuthorArea = () => {
                     <i className='ri-check-line'></i>
                   </div>
 
-                  <h3><Link href='/author-profile'>
+                  <h3><Link href='/profile'>
                     <a>Olivia Jenar</a></Link>
                   </h3>
                   <span>@Jenar</span>
@@ -75,7 +75,7 @@ const AuthorArea = () => {
 
             <div className='col-lg-3 col-6'>
               <div className='author-card'>
-              <Link href='/author-profile'>
+              <Link href='/profile'>
                 <a>
                   <img src='../images/author/author-img2.jpg' alt='Images' />
                 </a>
@@ -86,7 +86,7 @@ const AuthorArea = () => {
                     <i className='ri-check-line'></i>
                   </div>
 
-                  <h3><Link href='/author-profile'>
+                  <h3><Link href='/profile'>
                     <a>James Parker</a></Link>
                   </h3>
                   <span>@Parker</span>
@@ -124,7 +124,7 @@ const AuthorArea = () => {
 
             <div className='col-lg-3 col-6'>
               <div className='author-card'>
-              <Link href='/author-profile'>
+              <Link href='/profile'>
                 <a>
                   <img src='../images/author/author-img3.jpg' alt='Images' />
                 </a></Link>
@@ -134,7 +134,7 @@ const AuthorArea = () => {
                     <i className='ri-check-line'></i>
                   </div>
 
-                  <h3><Link href='/author-profile'>
+                  <h3><Link href='/profile'>
                     <a>Lucas Adison</a></Link>
                   </h3>
                   <span>@Adison</span>
@@ -172,7 +172,7 @@ const AuthorArea = () => {
 
             <div className='col-lg-3 col-6'>
               <div className='author-card'>
-              <Link href='/author-profile'>
+              <Link href='/profile'>
                 <a>
                   <img src='../images/author/author-img4.jpg' alt='Images' />
                 </a></Link>
@@ -182,7 +182,7 @@ const AuthorArea = () => {
                     <i className='ri-check-line'></i>
                   </div>
 
-                  <h3><Link href='/author-profile'>
+                  <h3><Link href='/profile'>
                     <a>Amelia Rosia</a></Link>
                   </h3>
                   <span>@Rosia</span>

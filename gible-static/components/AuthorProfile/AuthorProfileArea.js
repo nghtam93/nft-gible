@@ -67,7 +67,7 @@ const AuthorProfileArea = () => {
 								</div>
 
 								<h3>
-									<Link href="/author-profile">
+									<Link href="/profile">
 										<a>Olivia Jenar</a>
 									</Link>
 								</h3>
@@ -93,7 +93,7 @@ const AuthorProfileArea = () => {
 											<li>
 												<a
 													href="https://www.facebook.com/"
-													target="_blank" 
+													target="_blank"
 													rel="noreferrer"
 												>
 													<i className="ri-facebook-fill"></i>
@@ -102,7 +102,7 @@ const AuthorProfileArea = () => {
 											<li>
 												<a
 													href="https://www.instagram.com/"
-													target="_blank" 
+													target="_blank"
 													rel="noreferrer"
 												>
 													<i className="ri-instagram-fill"></i>
@@ -111,7 +111,7 @@ const AuthorProfileArea = () => {
 											<li>
 												<a
 													href="https://twitter.com/"
-													target="_blank" 
+													target="_blank"
 													rel="noreferrer"
 												>
 													<i className="ri-twitter-fill"></i>
@@ -204,7 +204,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -286,7 +286,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -367,7 +367,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -438,7 +438,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -508,7 +508,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -578,7 +578,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -648,7 +648,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -719,7 +719,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -791,7 +791,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -866,7 +866,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -948,7 +948,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -1242,7 +1242,7 @@ const AuthorProfileArea = () => {
 																			ETH{" "}
 																		</h4>
 																	</div>
-																	
+
 																	<Link href="/item-details">
 																		<a
 																			className="featured-content-btn"
@@ -1543,7 +1543,7 @@ const AuthorProfileArea = () => {
 																			ETH{" "}
 																		</h4>
 																	</div>
-																	
+
 																	<Link href="/item-details">
 																		<a
 																			className="featured-content-btn"
@@ -1627,7 +1627,7 @@ const AuthorProfileArea = () => {
 																			ETH{" "}
 																		</h4>
 																	</div>
-																	
+
 																	<Link href="/item-details">
 																		<a
 																			className="featured-content-btn"
@@ -1796,7 +1796,7 @@ const AuthorProfileArea = () => {
 																	</Link>
 																</div>
 
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -1933,7 +1933,7 @@ const AuthorProfileArea = () => {
 																			ETH{" "}
 																		</h4>
 																	</div>
-																	
+
 																	<Link href="/item-details">
 																		<a
 																			className="featured-content-btn"
@@ -1942,7 +1942,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -2016,7 +2016,7 @@ const AuthorProfileArea = () => {
 																	</Link>
 																</div>
 
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -2091,7 +2091,7 @@ const AuthorProfileArea = () => {
 																	</Link>
 																</div>
 
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -2166,7 +2166,7 @@ const AuthorProfileArea = () => {
 																	</Link>
 																</div>
 
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -2244,7 +2244,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -2328,7 +2328,7 @@ const AuthorProfileArea = () => {
 																	</Link>
 																</div>
 
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -2411,7 +2411,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -2485,7 +2485,7 @@ const AuthorProfileArea = () => {
 																	</Link>
 																</div>
 
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -2557,7 +2557,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -2630,7 +2630,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -2703,7 +2703,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -2777,7 +2777,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -2851,7 +2851,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -2929,7 +2929,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -3012,7 +3012,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -3095,7 +3095,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -3169,7 +3169,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -3241,7 +3241,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -3314,7 +3314,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -3387,7 +3387,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -3461,7 +3461,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>
@@ -3535,7 +3535,7 @@ const AuthorProfileArea = () => {
 																		</a>
 																	</Link>
 																</div>
-																<Link href="/author-profile">
+																<Link href="/profile">
 																	<a
 																		className="featured-user-option"
 																	>

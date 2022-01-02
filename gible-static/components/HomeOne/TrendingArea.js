@@ -54,7 +54,7 @@ const TrendingArea = () => {
 
             <div className='col-lg-4 col-md-5'>
               <div className='trending-btn text-end'>
-                <Link href='/item-details'>
+                <Link href='/discover'>
                   <a className='default-btn border-radius-5'>Explore More</a>
                 </Link>
               </div>
@@ -69,14 +69,14 @@ const TrendingArea = () => {
                     <Link href='/item-details'>
                       <a>
                         <img
-                          src='../images/trending/trending-img1.jpg'
+                          src='../images/painting/1.jpg'
                           alt='Images'
                         />
                       </a>
                     </Link>
 
                     <div className='trending-user'>
-                      <Link href='/author-profile'>
+                      <Link href='/profile'>
                         <a className='trending-user-option'>
                           <img
                             src='../images/trending/trending-user1.jpg'
@@ -115,14 +115,14 @@ const TrendingArea = () => {
                     <Link href='/item-details'>
                       <a>
                         <img
-                          src='../images/trending/trending-img2.jpg'
+                          src='../images/painting/2.jpg'
                           alt='Images'
                         />
                       </a>
                     </Link>
 
                     <div className='trending-user'>
-                      <Link href='/author-profile'>
+                      <Link href='/profile'>
                         <a className='trending-user-option'>
                           <img
                             src='../images/trending/trending-user2.jpg'
@@ -161,14 +161,14 @@ const TrendingArea = () => {
                     <Link href='/item-details'>
                       <a>
                         <img
-                          src='../images/trending/trending-img3.jpg'
+                          src='../images/painting/3.jpg'
                           alt='Images'
                         />
                       </a>
                     </Link>
 
                     <div className='trending-user'>
-                      <Link href='/author-profile'>
+                      <Link href='/profile'>
                         <a className='trending-user-option'>
                           <img
                             src='../images/trending/trending-user3.jpg'
@@ -207,14 +207,14 @@ const TrendingArea = () => {
                     <Link href='/item-details'>
                       <a>
                         <img
-                          src='../images/trending/trending-img4.jpg'
+                          src='../images/painting/4.jpg'
                           alt='Images'
                         />
                       </a>
                     </Link>
 
                     <div className='trending-user'>
-                      <Link href='/author-profile'>
+                      <Link href='/profile'>
                         <a className='trending-user-option'>
                           <img
                             src='../images/trending/trending-user4.jpg'
@@ -254,16 +254,106 @@ const TrendingArea = () => {
                     <Link href='/item-details'>
                       <a>
                         <img
-                          src='../images/trending/trending-img5.jpg'
+                          src='../images/painting/5.jpg'
                           alt='Images'
                         />
                       </a>
                     </Link>
                     <div className='trending-user'>
-                      <Link href='/author-profile'>
+                      <Link href='/profile'>
                         <a className='trending-user-option'>
                           <img
                             src='../images/trending/trending-user5.jpg'
+                            alt='Images'
+                          />
+                          <span>Created by @Jekob</span>
+                        </a>
+                      </Link>
+                    </div>
+
+                    <button
+                      type='button'
+                      className='default-btn border-radius-5'
+                    >
+                      Place Bid
+                    </button>
+                    <div className='trending-title'>
+                      <span>105 ETH 12/14</span>
+                      <h3>Bid 60 ETH</h3>
+                    </div>
+                  </div>
+
+                  <div className='content'>
+                    <h3>
+                      <Link href='/item-details'>
+                        <a>To Infinity</a>
+                      </Link>
+                    </h3>
+                    <span>
+                      <i className='ri-heart-line'></i> 204
+                    </span>
+                  </div>
+                </div>
+                <div className='trending-item'>
+                  <div className='trending-img'>
+                    <Link href='/item-details'>
+                      <a>
+                        <img
+                          src='../images/painting/6.jpg'
+                          alt='Images'
+                        />
+                      </a>
+                    </Link>
+                    <div className='trending-user'>
+                      <Link href='/profile'>
+                        <a className='trending-user-option'>
+                          <img
+                            src='../images/trending/trending-user1.jpg'
+                            alt='Images'
+                          />
+                          <span>Created by @Jekob</span>
+                        </a>
+                      </Link>
+                    </div>
+
+                    <button
+                      type='button'
+                      className='default-btn border-radius-5'
+                    >
+                      Place Bid
+                    </button>
+                    <div className='trending-title'>
+                      <span>105 ETH 12/14</span>
+                      <h3>Bid 60 ETH</h3>
+                    </div>
+                  </div>
+
+                  <div className='content'>
+                    <h3>
+                      <Link href='/item-details'>
+                        <a>To Infinity</a>
+                      </Link>
+                    </h3>
+                    <span>
+                      <i className='ri-heart-line'></i> 204
+                    </span>
+                  </div>
+                </div>
+                <div className='trending-item'>
+                  <div className='trending-img'>
+                    <Link href='/item-details'>
+                      <a>
+                        <img
+                          src='../images/painting/7.jpg'
+                          alt='Images'
+                        />
+                      </a>
+                    </Link>
+                    <div className='trending-user'>
+                      <Link href='/profile'>
+                        <a className='trending-user-option'>
+                          <img
+                            src='../images/trending/trending-user2.jpg'
                             alt='Images'
                           />
                           <span>Created by @Jekob</span>

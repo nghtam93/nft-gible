@@ -61,7 +61,7 @@ const BannerArea = () => {
                   morbi sed nisi.
                 </p>
                 <div className='banner-btn'>
-                  <Link href='/about'>
+                  <Link href='/discover'>
                     <a className='default-btn border-radius-5'>Explore More</a>
                   </Link>
                   <Link href='/add-wallet'>
@@ -80,7 +80,7 @@ const BannerArea = () => {
                     <div className='banner-card'>
                       <div className='banner-card-img'>
                         <img
-                          src='../images/home-one/home-one-img1.jpg'
+                          src='../images/painting/1.jpg'
                           alt='Images'
                         />
                         <div className='banner-card-content'>
@@ -103,7 +103,7 @@ const BannerArea = () => {
                       <div className='content'>
                         <div className='banner-user-list'>
                           <div className='banner-user-list-img'>
-                            <Link href='/author-profile'>
+                            <Link href='/profile'>
                               <a>
                                 <img
                                   src='../images/home-one/home-one-user1.jpg'
@@ -114,18 +114,18 @@ const BannerArea = () => {
                             <i className='ri-check-line'></i>
                           </div>
                           <h3>
-                            <Link href='/author-profile'>
+                            <Link href='/profile'>
                               <a>Flowers in Concrete</a>
                             </Link>
                           </h3>
                           <span>
                             Created by
-                            <Link href='/author-profile'>
+                            <Link href='/profile'>
                               <a>@Evelyn</a>
                             </Link>
                           </span>
                         </div>
-                        <Link href='/author-profile'>
+                        <Link href='/profile'>
                           <a className='banner-user-btn'>
                             <i className='ri-arrow-right-line'></i>
                           </a>
@@ -144,7 +144,7 @@ const BannerArea = () => {
                     <div className='banner-card banner-card-mt'>
                       <div className='banner-card-img'>
                         <img
-                          src='../images/home-one/home-one-img2.jpg'
+                          src='../images/painting/2.jpg'
                           alt='Images'
                         />
                         <div className='banner-card-content'>
@@ -167,7 +167,7 @@ const BannerArea = () => {
                       <div className='content'>
                         <div className='banner-user-list'>
                           <div className='banner-user-list-img'>
-                            <Link href='/author-profile'>
+                            <Link href='/profile'>
                               <a>
                                 <img
                                   src='../images/home-one/home-one-user2.jpg'
@@ -178,18 +178,18 @@ const BannerArea = () => {
                             <i className='ri-check-line'></i>
                           </div>
                           <h3>
-                            <Link href='/author-profile'>
+                            <Link href='/profile'>
                               <a>Walking on Air</a>
                             </Link>
                           </h3>
                           <span>
                             Created by
-                            <Link href='/author-profile'>
+                            <Link href='/profile'>
                               <a>@Adison</a>
                             </Link>
                           </span>
                         </div>
-                        <Link href='/author-profile'>
+                        <Link href='/profile'>
                           <a className='banner-user-btn'>
                             <i className='ri-arrow-right-line'></i>
                           </a>

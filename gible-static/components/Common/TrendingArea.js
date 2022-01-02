@@ -52,7 +52,7 @@ const TrendingArea = ({ bg }) => {
 
             <div className='col-lg-4 col-md-6'>
               <div className='trending-btn text-end'>
-                <Link href='/item-details'>
+                <Link href='/discover'>
                   <a className='default-btn border-radius-5'>Explore More</a>
                 </Link>
               </div>
@@ -74,7 +74,7 @@ const TrendingArea = ({ bg }) => {
                     </Link>
 
                     <div className='trending-user'>
-                      <Link href='/author-profile'>
+                      <Link href='/profile'>
                         <a className='trending-user-option'>
                           <img
                             src='../images/trending/trending-user1.jpg'
@@ -119,7 +119,7 @@ const TrendingArea = ({ bg }) => {
                       </a>
                     </Link>
                     <div className='trending-user'>
-                      <Link href='/author-profile'>
+                      <Link href='/profile'>
                         <a className='trending-user-option'>
                           <img
                             src='../images/trending/trending-user2.jpg'
@@ -164,7 +164,7 @@ const TrendingArea = ({ bg }) => {
                       </a>
                     </Link>
                     <div className='trending-user'>
-                      <Link href='/author-profile'>
+                      <Link href='/profile'>
                         <a className='trending-user-option'>
                           <img
                             src='../images/trending/trending-user3.jpg'
@@ -209,7 +209,7 @@ const TrendingArea = ({ bg }) => {
                       </a>
                     </Link>
                     <div className='trending-user'>
-                      <Link href='/author-profile'>
+                      <Link href='/profile'>
                         <a className='trending-user-option'>
                           <img
                             src='../images/trending/trending-user4.jpg'
@@ -254,7 +254,7 @@ const TrendingArea = ({ bg }) => {
                       </a>
                     </Link>
                     <div className='trending-user'>
-                      <Link href='/author-profile'>
+                      <Link href='/profile'>
                         <a className='trending-user-option'>
                           <img
                             src='../images/trending/trending-user5.jpg'
