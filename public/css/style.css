@@ -6,10 +6,10 @@ is the file you need to edit to change the look of the
 template.
 
 This files table contents are outlined below>>>>>
- 
+
 *******************************************
 *******************************************
-** - Default CSS Style 
+** - Default CSS Style
 ** - Section Title Style
 ** - Navbar Area Style
 ** - Main Banner Area CSS Style
@@ -24,10 +24,10 @@ Default CSS
 =================================================*/
 :root {
   --bodyFonts: 'Josefin Sans', sans-serif;
-  --pinkColor: #F14D5D;
+  --pinkColor: #F30106;
   --titleColor: #000000;
   --bodyColor: #666666;
-  --lightblueColor: #8D99FF;
+  --lightblueColor: #2755FF;
   --whiteColor: #ffffff;
   --fontSize: 16px;
   --transition: .5s;
@@ -251,7 +251,7 @@ Default Btn CSS
 }
 
 /*================================
-Section Title Style 
+Section Title Style
 ===================================*/
 .section-title span {
   font-size: 15px;
@@ -1029,7 +1029,7 @@ Navbar Area
 Navbar Area End
 ===================================*/
 /*=================================
-Main Banner Area 
+Main Banner Area
 ====================================*/
 .banner-area {
   background-color: #0A1831;
@@ -1932,7 +1932,7 @@ Inner Banner Area
 }
 
 /*=================================
-Trending Area 
+Trending Area
 ====================================*/
 .trending-slider {
   position: relative;
@@ -7379,7 +7379,7 @@ Footer Area
 }
 
 /*=================================
-Go Top Area 
+Go Top Area
 ====================================*/
 .go-top {
   position: fixed;
