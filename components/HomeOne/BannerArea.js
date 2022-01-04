@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import data from '../../utils/resources'
 
 const BannerArea = () => {
   //counter calculation
@@ -7,6 +8,9 @@ const BannerArea = () => {
   const [hours, setHours] = useState('');
   const [minutes, setMinutes] = useState('');
   const [seconds, setSeconds] = useState('');
+
+  const img1 = data[0]
+  const img2 = data[1]
 
   const comingSoonTime = () => {
     let endTime = new Date('August 23, 2022 17:00:00 PDT');
@@ -77,16 +81,16 @@ const BannerArea = () => {
               <div className='banner-card-area'>
                 <div className='row'>
                   <div className='col-lg-6 col-sm-6'>
-                    <div className='banner-card'>
+                    <div className='banner-card global-pointer'>
                       <div className='banner-card-img'>
                         <img
-                          src='../images/painting/1.jpg'
+                          src={img1.src.src}
                           alt='Images'
                         />
                         <div className='banner-card-content'>
                           <div className='card-left'>
                             <span>Start Bid</span>
-                            <h3>15,00 ETH</h3>
+                            <h3>{img1.price} ETH</h3>
                           </div>
                           <div className='card-right'>
                             <h3>Remaining Time</h3>
@@ -106,7 +110,7 @@ const BannerArea = () => {
                             <Link href='/profile'>
                               <a>
                                 <img
-                                  src='../images/home-one/home-one-user1.jpg'
+                                  src={img1.imgAuthor.src}
                                   alt='Images'
                                 />
                               </a>
@@ -121,7 +125,7 @@ const BannerArea = () => {
                           <span>
                             Created by
                             <Link href='/profile'>
-                              <a>@Evelyn</a>
+                              <a>@{img1.author}</a>
                             </Link>
                           </span>
                         </div>
@@ -142,15 +146,15 @@ const BannerArea = () => {
 
                   <div className='col-lg-6 col-sm-6'>
                     <div className='banner-card banner-card-mt'>
-                      <div className='banner-card-img'>
+                      <div className='banner-card-img global-pointer'>
                         <img
-                          src='../images/painting/2.jpg'
+                          src={img2.src.src}
                           alt='Images'
                         />
                         <div className='banner-card-content'>
                           <div className='card-left'>
                             <span>Start Bid</span>
-                            <h3>11,00 ETH</h3>
+                            <h3>{img2.price} ETH</h3>
                           </div>
                           <div className='card-right'>
                             <h3>Remaining Time</h3>
@@ -170,7 +174,7 @@ const BannerArea = () => {
                             <Link href='/profile'>
                               <a>
                                 <img
-                                  src='../images/home-one/home-one-user2.jpg'
+                                  src={img2.imgAuthor.src}
                                   alt='Images'
                                 />
                               </a>
@@ -185,7 +189,7 @@ const BannerArea = () => {
                           <span>
                             Created by
                             <Link href='/profile'>
-                              <a>@Adison</a>
+                              <a>@{img2.author}</a>
                             </Link>
                           </span>
                         </div>

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 import Link from 'next/link';
+import data from '../../utils/resources'
+import { useRouter } from 'next/router'
 
 const options = {
   loop: true,
@@ -33,6 +35,7 @@ const options = {
 };
 
 const TrendingArea = () => {
+  const router = useRouter()
   const [display, setDisplay] = useState(false);
   const [isMounted, setisMounted] = useState(false);
 
@@ -64,326 +67,57 @@ const TrendingArea = () => {
           <div className='trending-slider  pt-45'>
             {display ? (
               <OwlCarousel {...options}>
-                <div className='trending-item'>
-                  <div className='trending-img'>
-                    <Link href='/item-details'>
-                      <a>
-                        <img
-                          src='../images/painting/1.jpg'
-                          alt='Images'
-                        />
-                      </a>
-                    </Link>
-
-                    <div className='trending-user'>
-                      <Link href='/profile'>
-                        <a className='trending-user-option'>
+                {data.map((item, index) => (
+                  <div
+                    className='trending-item'
+                    key={index}
+                    onClick={() => router.push(`/item-details/${item.id}`)}
+                  >
+                    <div className='trending-img'>
+                      <Link href={`/item-details/${item.id}`}>
+                        <a>
                           <img
-                            src='../images/trending/trending-user1.jpg'
+                            src={item.src.src}
                             alt='Images'
                           />
-                          <span>Created by @Farnil</span>
                         </a>
                       </Link>
-                    </div>
-                    <button
-                      type='button'
-                      className='default-btn border-radius-5'
-                    >
-                      Place Bid
-                    </button>
-                    <div className='trending-title'>
-                      <span>100 ETH 12/14</span>
-                      <h3>Bid 80 ETH</h3>
-                    </div>
-                  </div>
 
-                  <div className='content'>
-                    <h3>
-                      <Link href='/item-details'>
-                        <a>Les Immortal's</a>
-                      </Link>
-                    </h3>
-                    <span>
-                      <i className='ri-heart-line'></i> 340
-                    </span>
-                  </div>
-                </div>
-
-                <div className='trending-item'>
-                  <div className='trending-img'>
-                    <Link href='/item-details'>
-                      <a>
-                        <img
-                          src='../images/painting/2.jpg'
-                          alt='Images'
-                        />
-                      </a>
-                    </Link>
-
-                    <div className='trending-user'>
-                      <Link href='/profile'>
-                        <a className='trending-user-option'>
-                          <img
-                            src='../images/trending/trending-user2.jpg'
-                            alt='Images'
-                          />
-                          <span>Created by @Anvi</span>
-                        </a>
-                      </Link>
-                    </div>
-                    <button
-                      type='button'
-                      className='default-btn border-radius-5'
-                    >
-                      Place Bid
-                    </button>
-                    <div className='trending-title'>
-                      <span>110 ETH 12/14</span>
-                      <h3>Bid 90 ETH</h3>
-                    </div>
-                  </div>
-
-                  <div className='content'>
-                    <h3>
-                      <Link href='/item-details'>
-                        <a>Industrial Revolution</a>
-                      </Link>
-                    </h3>
-                    <span>
-                      <i className='ri-heart-line'></i> 365
-                    </span>
-                  </div>
-                </div>
-
-                <div className='trending-item'>
-                  <div className='trending-img'>
-                    <Link href='/item-details'>
-                      <a>
-                        <img
-                          src='../images/painting/3.jpg'
-                          alt='Images'
-                        />
-                      </a>
-                    </Link>
-
-                    <div className='trending-user'>
-                      <Link href='/profile'>
-                        <a className='trending-user-option'>
-                          <img
-                            src='../images/trending/trending-user3.jpg'
-                            alt='Images'
-                          />
-                          <span>Created by @Anvi</span>
-                        </a>
-                      </Link>
-                    </div>
-                    <button
-                      type='button'
-                      className='default-btn border-radius-5'
-                    >
-                      Place Bid
-                    </button>
-                    <div className='trending-title'>
-                      <span>120 ETH 12/14</span>
-                      <h3>Bid 70 ETH</h3>
-                    </div>
-                  </div>
-
-                  <div className='content'>
-                    <h3>
-                      <Link href='/item-details'>
-                        <a>Walking on Air</a>
-                      </Link>
-                    </h3>
-                    <span>
-                      <i className='ri-heart-line'></i> 190
-                    </span>
-                  </div>
-                </div>
-
-                <div className='trending-item'>
-                  <div className='trending-img'>
-                    <Link href='/item-details'>
-                      <a>
-                        <img
-                          src='../images/painting/4.jpg'
-                          alt='Images'
-                        />
-                      </a>
-                    </Link>
-
-                    <div className='trending-user'>
-                      <Link href='/profile'>
-                        <a className='trending-user-option'>
-                          <img
-                            src='../images/trending/trending-user4.jpg'
-                            alt='Images'
-                          />
-                          <span>Created by @Aiden</span>
-                        </a>
-                      </Link>
+                      <div className='trending-user'>
+                        <Link href='/profile'>
+                          <a className='trending-user-option'>
+                            <img
+                              src={item.imgAuthor.src}
+                              alt='Images'
+                            />
+                            <span>Created by @{item.author}</span>
+                          </a>
+                        </Link>
+                      </div>
+                      <button
+                        type='button'
+                        className='default-btn border-radius-5'
+                      >
+                        Place Bid
+                      </button>
+                      <div className='trending-title'>
+                        <span>{item.price} ETH 12/14</span>
+                        <h3>Bid {item.bid} ETH</h3>
+                      </div>
                     </div>
 
-                    <button
-                      type='button'
-                      className='default-btn border-radius-5'
-                    >
-                      Place Bid
-                    </button>
-                    <div className='trending-title'>
-                      <span>100 ETH 12/14</span>
-                      <h3>Bid 80 ETH</h3>
+                    <div className='content'>
+                      <h3>
+                        <Link href='/item-details'>
+                          <a>Les Immortal's</a>
+                        </Link>
+                      </h3>
+                      <span>
+                        <i className='ri-heart-line'></i> 340
+                      </span>
                     </div>
                   </div>
-
-                  <div className='content'>
-                    <h3>
-                      <Link href='/item-details'>
-                        <a>Tranquility (Modal)</a>
-                      </Link>
-                    </h3>
-                    <span>
-                      <i className='ri-heart-line'></i> 204
-                    </span>
-                  </div>
-                </div>
-
-                <div className='trending-item'>
-                  <div className='trending-img'>
-                    <Link href='/item-details'>
-                      <a>
-                        <img
-                          src='../images/painting/5.jpg'
-                          alt='Images'
-                        />
-                      </a>
-                    </Link>
-                    <div className='trending-user'>
-                      <Link href='/profile'>
-                        <a className='trending-user-option'>
-                          <img
-                            src='../images/trending/trending-user5.jpg'
-                            alt='Images'
-                          />
-                          <span>Created by @Jekob</span>
-                        </a>
-                      </Link>
-                    </div>
-
-                    <button
-                      type='button'
-                      className='default-btn border-radius-5'
-                    >
-                      Place Bid
-                    </button>
-                    <div className='trending-title'>
-                      <span>105 ETH 12/14</span>
-                      <h3>Bid 60 ETH</h3>
-                    </div>
-                  </div>
-
-                  <div className='content'>
-                    <h3>
-                      <Link href='/item-details'>
-                        <a>To Infinity</a>
-                      </Link>
-                    </h3>
-                    <span>
-                      <i className='ri-heart-line'></i> 204
-                    </span>
-                  </div>
-                </div>
-                <div className='trending-item'>
-                  <div className='trending-img'>
-                    <Link href='/item-details'>
-                      <a>
-                        <img
-                          src='../images/painting/6.jpg'
-                          alt='Images'
-                        />
-                      </a>
-                    </Link>
-                    <div className='trending-user'>
-                      <Link href='/profile'>
-                        <a className='trending-user-option'>
-                          <img
-                            src='../images/trending/trending-user1.jpg'
-                            alt='Images'
-                          />
-                          <span>Created by @Jekob</span>
-                        </a>
-                      </Link>
-                    </div>
-
-                    <button
-                      type='button'
-                      className='default-btn border-radius-5'
-                    >
-                      Place Bid
-                    </button>
-                    <div className='trending-title'>
-                      <span>105 ETH 12/14</span>
-                      <h3>Bid 60 ETH</h3>
-                    </div>
-                  </div>
-
-                  <div className='content'>
-                    <h3>
-                      <Link href='/item-details'>
-                        <a>To Infinity</a>
-                      </Link>
-                    </h3>
-                    <span>
-                      <i className='ri-heart-line'></i> 204
-                    </span>
-                  </div>
-                </div>
-                <div className='trending-item'>
-                  <div className='trending-img'>
-                    <Link href='/item-details'>
-                      <a>
-                        <img
-                          src='../images/painting/7.jpg'
-                          alt='Images'
-                        />
-                      </a>
-                    </Link>
-                    <div className='trending-user'>
-                      <Link href='/profile'>
-                        <a className='trending-user-option'>
-                          <img
-                            src='../images/trending/trending-user2.jpg'
-                            alt='Images'
-                          />
-                          <span>Created by @Jekob</span>
-                        </a>
-                      </Link>
-                    </div>
-
-                    <button
-                      type='button'
-                      className='default-btn border-radius-5'
-                    >
-                      Place Bid
-                    </button>
-                    <div className='trending-title'>
-                      <span>105 ETH 12/14</span>
-                      <h3>Bid 60 ETH</h3>
-                    </div>
-                  </div>
-
-                  <div className='content'>
-                    <h3>
-                      <Link href='/item-details'>
-                        <a>To Infinity</a>
-                      </Link>
-                    </h3>
-                    <span>
-                      <i className='ri-heart-line'></i> 204
-                    </span>
-                  </div>
-                </div>
+                ))}
               </OwlCarousel>
             ) : (
               ''

@@ -2,8 +2,11 @@ import React from 'react';
 import ItemDetailsDescription from './ItemDetailsDescription';
 import ItemDetailsHistory from './ItemDetailsHistory';
 import ItemDetailsUser from './ItemDetailsUser';
+import data from '../../utils/resources'
 
-const ItemDetailsArea = () => {
+const ItemDetailsArea = ({ id }) => {
+  const tmpId = id || 1
+  const item = data.find(item => item.id === +tmpId)
   return (
     <>
       <div className='item-details-area pt-100 pb-70'>
@@ -13,7 +16,7 @@ const ItemDetailsArea = () => {
               <div className='item-details-left-side pr-20'>
                 <div className='item-details-img'>
                   <img
-                    src='../images/Item-details/Item-details1.jpg'
+                    src={item.src.src}
                     alt='Images'
                   />
                   <span>

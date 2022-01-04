@@ -1080,6 +1080,9 @@ Main Banner Area
 .banner-card .banner-card-img img {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  width: 406px;
+  height: 524px;
+  object-fit: cover;
 }
 
 .banner-card .banner-card-img .banner-card-content {
@@ -2029,6 +2032,9 @@ Trending Area
 
 .trending-item .trending-img a img {
   border-radius: 15px;
+  width: 304px;
+  height: 326px;
+  object-fit: cover;
 }
 
 .trending-item .trending-img .default-btn {
