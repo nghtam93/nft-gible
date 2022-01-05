@@ -9,7 +9,7 @@ import AuthorArea from '../components/HomeOne/AuthorArea';
 import CollectionsArea from '../components/Common/CollectionsArea';
 import Footer from '../components/Layout/Footer';
 import Copyright from '../components/Common/Copyright';
-
+import Wallet from '../components/Modal/Wallet'
 const Index = () => {
   return (
     <>
@@ -24,6 +24,9 @@ const Index = () => {
       <CollectionsArea />
       <Footer />
       <Copyright/>
+      <Wallet
+        isShow={true}
+      />
     </>
   );
 };

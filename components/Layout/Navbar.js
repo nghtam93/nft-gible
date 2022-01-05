@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Link from '../../utils/ActiveLink';
 import SearchModal from './SearchModal';
+import Wallet from '../Modal/Wallet';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -404,6 +405,9 @@ const Navbar = () => {
         showSearchModal={showSearchModal}
         toggleSearchModal={toggleSearchModal}
       />
+      {/* <Wallet
+        isShow={true}
+      /> */}
     </>
   );
 };
