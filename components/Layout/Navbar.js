@@ -51,7 +51,7 @@ const Navbar = () => {
               <div className='logo'>
                 <Link href='/'>
                   <a>
-                    <img src='../images/logo-2.png' alt='logo' />
+                    <img src='../images/logo.png' alt='logo' />
                   </a>
                 </Link>
               </div>
@@ -93,10 +93,12 @@ const Navbar = () => {
               >
                 <ul className='navbar-nav m-auto'>
                   <li className='nav-item'>
-                    <a href='/' className='nav-link active'>
-                      Home
-                      {/* <i className='ri-arrow-down-s-line'></i> */}
-                    </a>
+                    <Link href='/'>
+                      <a className='nav-link active'>
+                        Home
+                        {/* <i className='ri-arrow-down-s-line'></i> */}
+                      </a>
+                    </Link>
                     {/* <ul className='dropdown-menu'>
                       <li className='nav-item'>
                         <Link href='/' activeClassName='active'>

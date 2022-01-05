@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			<Head>
-				<title>Gible - React Next NFT Marketplace Template</title>
+				<title>Meta NFT Marketplace Template</title>
 				<meta
 					name="viewport"
 					content="initial-scale=1.0, width=device-width"

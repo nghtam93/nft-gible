@@ -277,7 +277,7 @@ Section Title Style
 Navbar Area
 ===================================*/
 .desktop-nav {
-  background-color: var(--whiteColor);
+  background-color: #0A1831;
   z-index: 99;
   padding-top: 0;
   padding-bottom: 0;
