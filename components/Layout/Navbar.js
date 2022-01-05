@@ -340,6 +340,21 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </div>
+                <ul className='navbar-nav m-auto'>
+                  <li className='nav-item'>
+                    <a href='#' className='nav-link wallet-address'>
+                    0x90e49D0...a78E
+                      <i className='ri-arrow-down-s-line'></i>
+                    </a>
+                    <ul className='dropdown-menu'>
+                      <li className='nav-item'>
+                        <Link href='/discover' activeClassName='active'>
+                          <a className='nav-link'>Disconnect</a>
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </nav>
           </div>
