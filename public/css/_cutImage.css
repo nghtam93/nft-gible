@@ -1,0 +1,22 @@
+.background-table {
+  background-image: url("../images/test.jpg");
+  width: 762px;
+  height: 545px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+table,
+th,
+td {
+  border: 5px solid rgb(104, 75, 75);
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.border {
+  border: 5.1px solid red !important;
+}

@@ -14,6 +14,12 @@ const PageBanner = ({ bannerHeading, parentTitle, pageTitle,bg }) => {
                   <a>Home</a>
                 </Link>
               </li>
+
+              <li>
+                <Link href='/cut-image'>
+                  <a>Cut Image</a>
+                </Link>
+              </li>
               <li>{parentTitle}</li>
               { pageTitle && <li>{pageTitle}</li> }
               
