@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import SearchModal from './SearchModal';
 import Link from '../../utils/ActiveLink';
+import { connect } from 'react-redux';
+import { openWallet, disconnectWallet } from '../../redux/actions/walletActions';
 
-const NavbarTwo = () => {
+const NavbarTwo = ({ wallet, openWallet, disconnectWallet }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [showWallet, setShowWallet] = useState(false);
   const [showSearchModal, setShowSearchModal] = useState(false);
@@ -31,6 +33,10 @@ const NavbarTwo = () => {
   if (typeof window !== 'undefined') {
     // browser code
     window.addEventListener('scroll', showStickyMenu);
+  }
+  const handleDisconnectWallet = () => {
+    window.localStorage.removeItem('connectorIdv2')
+    disconnectWallet()
   }
   return (
     <>
@@ -146,6 +152,14 @@ const NavbarTwo = () => {
                   <li className='nav-item'>
                     <Link href='/activity' activeClassName='active'>
                       <a className='nav-link'>Activity</a>
+                    </Link>
+                  </li>
+
+                  <li className="nav-item">
+                    <Link href="/item-details-multi/1">
+                      <a className="nav-link">
+                        Fragmentation image
+                      </a>
                     </Link>
                   </li>
 
@@ -320,19 +334,38 @@ const NavbarTwo = () => {
                     </Link>
                   </li> */}
                 </ul>
-
-                <div className='others-options'>
-                  <ul className='optional-item-list'>
-                    <li>
-                      <Link href='/mint' activeClassName='active'>
-                        <a>Create</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='/add-wallet' activeClassName='active'>
-                        <a className='active'>Connect Wallet</a>
-                      </Link>
-                    </li>
+                <div className='d-flex align-items-center'>
+                  <div className='others-options'>
+                    <ul className='optional-item-list'>
+                      <li>
+                        <Link href='/mint' activeClassName='active'>
+                          <a>Create</a>
+                        </Link>
+                      </li>
+                      {!wallet.is_connect &&
+                        <li>
+                          <a className='active global-pointer' onClick={openWallet}>Connect Wallet</a>
+                        </li>
+                      }
+                    </ul>
+                  </div>
+                  <ul className='navbar-nav m-auto'>
+                    {wallet.is_connect &&
+                      <li className='nav-item'>
+                        <a href='#' className='nav-link wallet-address'>
+                        0x90e49D0...a78E
+                          <i className='ri-arrow-down-s-line'></i>
+                        </a>
+                        <ul className='dropdown-menu'>
+                          <li className='nav-item'>
+                            <a
+                              className='nav-link active global-pointer'
+                              onClick={handleDisconnectWallet}
+                            >Disconnect</a>
+                          </li>
+                        </ul>
+                      </li>
+                    }
                   </ul>
                 </div>
               </div>
@@ -395,4 +428,13 @@ const NavbarTwo = () => {
   );
 };
 
-export default NavbarTwo;
+const mapStateToProps = state => ({
+	wallet: state.wallet
+});
+
+const mapDispatchToProps = {
+	openWallet: openWallet,
+  disconnectWallet: disconnectWallet
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(NavbarTwo);
