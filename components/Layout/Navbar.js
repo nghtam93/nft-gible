@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import Link from '../../utils/ActiveLink';
-import SearchModal from './SearchModal';
-import Wallet from '../Modal/Wallet';
+import { useState } from "react";
+import Link from "../../utils/ActiveLink";
+import SearchModal from "./SearchModal";
+import Wallet from "../Modal/Wallet";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -29,30 +29,30 @@ const Navbar = () => {
       setSticky(false);
     }
   };
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     // browser code
-    window.addEventListener('scroll', showStickyMenu);
+    window.addEventListener("scroll", showStickyMenu);
   }
   return (
     <>
-      <div className={sticky ? 'is-sticky navbar-area' : 'navbar-area'}>
-        <div className='mobile-responsive-nav'>
-          <div className='container-fluid'>
-            <div className='mobile-responsive-menu'>
+      <div className={sticky ? "is-sticky navbar-area" : "navbar-area"}>
+        <div className="mobile-responsive-nav">
+          <div className="container-fluid">
+            <div className="mobile-responsive-menu">
               <div
                 onClick={() => toggleMenu()}
-                className='hamburger-menu hamburger-two'
+                className="hamburger-menu hamburger-two"
               >
                 {showMenu ? (
-                  <i className='ri-close-line'></i>
+                  <i className="ri-close-line"></i>
                 ) : (
-                  <i className='ri-menu-line'></i>
+                  <i className="ri-menu-line"></i>
                 )}
               </div>
-              <div className='logo'>
-                <Link href='/'>
+              <div className="logo">
+                <Link href="/">
                   <a>
-                    <img src='../images/logo.png' alt='logo' />
+                    <img src="../images/logo.png" alt="logo" />
                   </a>
                 </Link>
               </div>
@@ -63,43 +63,52 @@ const Navbar = () => {
         <div
           className={
             showMenu
-              ? 'show desktop-nav desktop-nav-one nav-area'
-              : 'desktop-nav desktop-nav-one nav-area'
+              ? "show desktop-nav desktop-nav-one nav-area"
+              : "desktop-nav desktop-nav-one nav-area"
           }
         >
-          <div className='container-fluid'>
-            <nav className='navbar navbar-expand-md navbar-light '>
-              <Link href='/'>
-                <a className='navbar-brand'>
-                  <img src='../images/logo.png' alt='Logo' />
+          <div className="container-fluid">
+            <nav className="navbar navbar-expand-md navbar-light ">
+              <Link href="/">
+                <a className="navbar-brand">
+                  <img src="../images/logo.png" alt="Logo" />
                 </a>
               </Link>
 
-              <div className='nav-widget-form'>
-                <form className='search-form'>
+              <div className="nav-widget-form">
+                <form className="search-form">
                   <input
-                    type='search'
-                    className='form-control'
-                    placeholder='Search items, Creators '
+                    type="search"
+                    className="form-control"
+                    placeholder="Search items, Creators "
                   />
-                  <button type='submit'>
-                    <i className='ri-search-line'></i>
+                  <button type="submit">
+                    <i className="ri-search-line"></i>
                   </button>
                 </form>
               </div>
 
               <div
-                className='collapse navbar-collapse mean-menu'
-                id='navbarSupportedContent'
+                className="collapse navbar-collapse mean-menu"
+                id="navbarSupportedContent"
               >
-                <ul className='navbar-nav m-auto'>
-                  <li className='nav-item'>
-                    <Link href='/'>
-                      <a className='nav-link active'>
+                <ul className="navbar-nav m-auto">
+                  <li className="nav-item">
+                    <Link href="/cut-image">
+                      <a className="nav-link active">
+                        Cut image
+                      </a>
+                    </Link>
+                  </li>
+
+                  <li className="nav-item">
+                    <Link href="/">
+                      <a className="nav-link active">
                         Home
                         {/* <i className='ri-arrow-down-s-line'></i> */}
                       </a>
                     </Link>
+
                     {/* <ul className='dropdown-menu'>
                       <li className='nav-item'>
                         <Link href='/' activeClassName='active'>
@@ -119,20 +128,20 @@ const Navbar = () => {
                     </ul> */}
                   </li>
 
-                  <li className='nav-item'>
-                    <a href='#' className='nav-link '>
+                  <li className="nav-item">
+                    <a href="#" className="nav-link ">
                       Discover
-                      <i className='ri-arrow-down-s-line'></i>
+                      <i className="ri-arrow-down-s-line"></i>
                     </a>
-                    <ul className='dropdown-menu'>
-                      <li className='nav-item'>
-                        <Link href='/auction' activeClassName='active'>
-                          <a className='nav-link'>Live Auction</a>
+                    <ul className="dropdown-menu">
+                      <li className="nav-item">
+                        <Link href="/auction" activeClassName="active">
+                          <a className="nav-link">Live Auction</a>
                         </Link>
                       </li>
-                      <li className='nav-item'>
-                        <Link href='/discover' activeClassName='active'>
-                          <a className='nav-link'>Discover</a>
+                      <li className="nav-item">
+                        <Link href="/discover" activeClassName="active">
+                          <a className="nav-link">Discover</a>
                         </Link>
                       </li>
                       {/* <li className='nav-item'>
@@ -140,50 +149,47 @@ const Navbar = () => {
                           <a className='nav-link'>Discover Style Two</a>
                         </Link>
                       </li> */}
-                      <li className='nav-item'>
-                        <Link href='/item-details' activeClassName='active'>
-                          <a className='nav-link'>Item Details</a>
+                      <li className="nav-item">
+                        <Link href="/item-details" activeClassName="active">
+                          <a className="nav-link">Item Details</a>
                         </Link>
                       </li>
                     </ul>
                   </li>
 
-                  <li className='nav-item'>
-                    <Link href='/activity' activeClassName='active'>
-                      <a className='nav-link'>Activity</a>
+                  <li className="nav-item">
+                    <Link href="/activity" activeClassName="active">
+                      <a className="nav-link">Activity</a>
                     </Link>
                   </li>
 
-                  <li className='nav-item'>
-                    <a href='#' className='nav-link'>
+                  <li className="nav-item">
+                    <a href="#" className="nav-link">
                       Pages
-                      <i className='ri-arrow-down-s-line'></i>
+                      <i className="ri-arrow-down-s-line"></i>
                     </a>
-                    <ul className='dropdown-menu'>
-                      <li className='nav-item'>
-                        <Link href='/drops' activeClassName='active'>
-                          <a className='nav-link'>Drops</a>
+                    <ul className="dropdown-menu">
+                      <li className="nav-item">
+                        <Link href="/drops" activeClassName="active">
+                          <a className="nav-link">Drops</a>
                         </Link>
                       </li>
 
-                      <li className='nav-item'>
-                        <Link
-                          href='/mint'
-                          activeClassName='active'
-                        >
-                          <a className='nav-link'>Mint</a>
+                      <li className="nav-item">
+                        <Link href="/mint" activeClassName="active">
+                          <a className="nav-link">Mint</a>
                         </Link>
                       </li>
 
-                      <li className='nav-item'>
-                        <Link href='/authors' activeClassName='active'>
-                          <a className='nav-link'>Authors</a>
+                      <li className="nav-item">
+                        <Link href="/authors" activeClassName="active">
+                          <a className="nav-link">Authors</a>
                         </Link>
                       </li>
 
-                      <li className='nav-item'>
-                        <Link href='/profile' activeClassName='active'>
-                          <a className='nav-link'>Profile</a>
+                      <li className="nav-item">
+                        <Link href="/profile" activeClassName="active">
+                          <a className="nav-link">Profile</a>
                         </Link>
                       </li>
 
@@ -326,30 +332,30 @@ const Navbar = () => {
                   </li> */}
                 </ul>
 
-                <div className='others-options'>
-                  <ul className='optional-item-list'>
+                <div className="others-options">
+                  <ul className="optional-item-list">
                     <li>
-                      <Link href='/mint' activeClassName='active'>
+                      <Link href="/mint" activeClassName="active">
                         <a>Create</a>
                       </Link>
                     </li>
                     <li>
-                      <Link href='/add-wallet' activeClassName='active'>
-                        <a className='active'>Connect Wallet</a>
+                      <Link href="/add-wallet" activeClassName="active">
+                        <a className="active">Connect Wallet</a>
                       </Link>
                     </li>
                   </ul>
                 </div>
-                <ul className='navbar-nav m-auto'>
-                  <li className='nav-item'>
-                    <a href='#' className='nav-link wallet-address'>
-                    0x90e49D0...a78E
-                      <i className='ri-arrow-down-s-line'></i>
+                <ul className="navbar-nav m-auto">
+                  <li className="nav-item">
+                    <a href="#" className="nav-link wallet-address">
+                      0x90e49D0...a78E
+                      <i className="ri-arrow-down-s-line"></i>
                     </a>
-                    <ul className='dropdown-menu'>
-                      <li className='nav-item'>
-                        <Link href='/discover' activeClassName='active'>
-                          <a className='nav-link'>Disconnect</a>
+                    <ul className="dropdown-menu">
+                      <li className="nav-item">
+                        <Link href="/discover" activeClassName="active">
+                          <a className="nav-link">Disconnect</a>
                         </Link>
                       </li>
                     </ul>
@@ -360,52 +366,49 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className='mobile-nav'>
+        <div className="mobile-nav">
           <div
-            className='search-btn global-pointer'
+            className="search-btn global-pointer"
             onClick={() => toggleSearchModal()}
           >
-            <a data-bs-toggle='modal' data-bs-target='#searchmodal'>
-              <i className='ri-search-line'></i>
+            <a data-bs-toggle="modal" data-bs-target="#searchmodal">
+              <i className="ri-search-line"></i>
             </a>
           </div>
         </div>
 
-        <div className='side-nav-responsive'>
-          <div className='container-max'>
+        <div className="side-nav-responsive">
+          <div className="container-max">
             <div
-              className='dot-menu dot-menu-mt'
+              className="dot-menu dot-menu-mt"
               onClick={() => toggleWallet()}
             >
-              <div className='circle-inner'>
-                <div className='circle circle-one'></div>
-                <div className='circle circle-two'></div>
-                <div className='circle circle-three'></div>
+              <div className="circle-inner">
+                <div className="circle circle-one"></div>
+                <div className="circle circle-two"></div>
+                <div className="circle circle-three"></div>
               </div>
             </div>
 
             <div
               className={
                 showWallet
-                  ? 'container container-mt active'
-                  : 'container container-mt'
+                  ? "container container-mt active"
+                  : "container container-mt"
               }
             >
-              <div className='side-nav-inner'>
-                <div className='side-nav justify-content-center align-items-center'>
-                  <div className='side-nav-item'>
-                    <ul className='optional-item-list'>
+              <div className="side-nav-inner">
+                <div className="side-nav justify-content-center align-items-center">
+                  <div className="side-nav-item">
+                    <ul className="optional-item-list">
                       <li>
-                        <Link
-                          href='/mint'
-                          activeClassName='active'
-                        >
+                        <Link href="/mint" activeClassName="active">
                           <a>Create</a>
                         </Link>
                       </li>
                       <li>
-                        <Link href='/add-wallet' activeClassName='active'>
-                          <a className='active'>Connect Wallet</a>
+                        <Link href="/add-wallet" activeClassName="active">
+                          <a className="active">Connect Wallet</a>
                         </Link>
                       </li>
                     </ul>
