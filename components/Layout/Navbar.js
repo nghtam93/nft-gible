@@ -101,14 +101,6 @@ const Navbar = ({ wallet, openWallet, disconnectWallet }) => {
               >
                 <ul className="navbar-nav m-auto">
                   <li className="nav-item">
-                    <Link href="/cut-image">
-                      <a className="nav-link active">
-                        Cut image
-                      </a>
-                    </Link>
-                  </li>
-
-                  <li className="nav-item">
                     <Link href="/">
                       <a className="nav-link active">
                         Home
@@ -167,6 +159,14 @@ const Navbar = ({ wallet, openWallet, disconnectWallet }) => {
                   <li className="nav-item">
                     <Link href="/activity" activeClassName="active">
                       <a className="nav-link">Activity</a>
+                    </Link>
+                  </li>
+
+                  <li className="nav-item">
+                    <Link href="/item-details-multi/1">
+                      <a className="nav-link">
+                        Fragmentation image
+                      </a>
                     </Link>
                   </li>
 
