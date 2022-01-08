@@ -19,6 +19,55 @@ import author10 from "../public/images/author/author-user10.jpg";
 import author11 from "../public/images/author/author-user11.jpg";
 import author12 from "../public/images/author/author-user12.jpg";
 
+import img8 from "../public/img/img1.jpg";
+import img9 from "../public/img/img2.jpg";
+import img10 from "../public/img/img3.jpg";
+import img11 from "../public/img/img4.jpg";
+import img12 from "../public/img/img5.jpg";
+import img13 from "../public/img/img6.jpg";
+import img14 from "../public/img/img7.jpg";
+import img15 from "../public/img/img8.jpg";
+import img16 from "../public/img/img9.jpg";
+import img17 from "../public/img/img10.jpg";
+import img18 from "../public/img/img11.jpg";
+import img19 from "../public/img/img12.jpg";
+import img20 from "../public/img/img13.jpg";
+import img21 from "../public/img/img14.jpg";
+import img22 from "../public/img/img15.jpg";
+import img23 from "../public/img/img16.jpg";
+import img24 from "../public/img/img17.jpg";
+import img25 from "../public/img/img18.jpg";
+import img26 from "../public/img/img19.jpg";
+import img27 from "../public/img/img20.jpg";
+import img28 from "../public/img/img21.jpg";
+import img29 from "../public/img/img22.jpg";
+import img30 from "../public/img/img23.jpg";
+import img31 from "../public/img/img24.jpg";
+import img32 from "../public/img/img25.jpg";
+import img33 from "../public/img/img26.jpg";
+import img34 from "../public/img/img27.jpg";
+import img35 from "../public/img/img28.jpg";
+import img36 from "../public/img/img29.jpg";
+import img37 from "../public/img/img30.jpg";
+import img38 from "../public/img/img31.jpg";
+import img39 from "../public/img/img32.jpg";
+import img40 from "../public/img/img33.jpg";
+import img41 from "../public/img/img34.jpg";
+import img42 from "../public/img/img35.jpg";
+import img43 from "../public/img/img36.jpg";
+import img44 from "../public/img/img37.jpg";
+import img45 from "../public/img/img38.jpg";
+import img46 from "../public/img/img39.jpg";
+import img47 from "../public/img/img40.jpg";
+import img48 from "../public/img/img41.jpg";
+import img49 from "../public/img/img42.jpg";
+import img50 from "../public/img/img43.jpg";
+import img51 from "../public/img/img44.jpg";
+import img52 from "../public/img/img45.jpg";
+import img53 from "../public/img/img46.jpg";
+import img54 from "../public/img/img47.jpg";
+import img55 from "../public/img/img48.jpg";
+
 const dataTrending = [
   {
     name: "image1",
@@ -89,7 +138,7 @@ const dataLiveAction = [
   {
     name: "image7",
     id: 8,
-    src: img7,
+    src: img55,
     author: "Emilia",
     startBid: 16.0,
     bid: 60,
@@ -99,7 +148,7 @@ const dataLiveAction = [
   {
     name: "image7",
     id: 9,
-    src: img7,
+    src: img15,
     author: "Emilia",
     startBid: 16.0,
     bid: 60,
@@ -109,7 +158,7 @@ const dataLiveAction = [
   {
     name: "image7",
     id: 10,
-    src: img7,
+    src: img18,
     author: "Emilia",
     startBid: 16.0,
     bid: 60,
@@ -119,7 +168,7 @@ const dataLiveAction = [
   {
     name: "image7",
     id: 11,
-    src: img7,
+    src: img11,
     author: "Emilia",
     startBid: 16.0,
     bid: 60,
@@ -132,7 +181,7 @@ const dataFeaturedAssets = [
   {
     name: "image7",
     id: 12,
-    src: img7,
+    src: img12,
     author: "Farnil",
     startBid: 16.0,
     bid: 60,
@@ -142,7 +191,7 @@ const dataFeaturedAssets = [
   {
     name: "image7",
     id: 13,
-    src: img7,
+    src: img13,
     author: "Emilia",
     startBid: 16.0,
     bid: 60,
@@ -152,7 +201,7 @@ const dataFeaturedAssets = [
   {
     name: "image7",
     id: 14,
-    src: img7,
+    src: img24,
     author: "Emilia",
     startBid: 16.0,
     bid: 60,
@@ -162,7 +211,7 @@ const dataFeaturedAssets = [
   {
     name: "image7",
     id: 15,
-    src: img7,
+    src: img25,
     author: "Emilia",
     startBid: 16.0,
     bid: 15,
@@ -172,7 +221,7 @@ const dataFeaturedAssets = [
   {
     name: "image7",
     id: 16,
-    src: img7,
+    src: img26,
     author: "Emilia",
     startBid: 16.0,
     bid: 60,
@@ -182,7 +231,7 @@ const dataFeaturedAssets = [
   {
     name: "image7",
     id: 17,
-    src: img7,
+    src: img27,
     author: "Emilia",
     startBid: 16.0,
     bid: 60,
@@ -192,7 +241,7 @@ const dataFeaturedAssets = [
   {
     name: "image7",
     id: 18,
-    src: img7,
+    src: img28,
     author: "Emilia",
     startBid: 16.0,
     bid: 60,
@@ -202,7 +251,7 @@ const dataFeaturedAssets = [
   {
     name: "image7",
     id: 19,
-    src: img7,
+    src: img31,
     author: "Emilia",
     startBid: 16.0,
     bid: 60,
@@ -215,7 +264,7 @@ const dataBanner = [
   {
     name: "image7",
     id: 20,
-    src: img7,
+    src: img9,
     author: "Jekob",
     startBid: 105.0,
     bid: 60,
@@ -225,7 +274,7 @@ const dataBanner = [
   {
     name: "image7",
     id: 21,
-    src: img7,
+    src: img10,
     author: "anvi",
     startBid: 100.0,
     bid: 60,
