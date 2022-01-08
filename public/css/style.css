@@ -10807,3 +10807,12 @@ Animation CSS
 .wallet-address:hover {
   background-color: #14233D !important;
 }
+
+@media (min-width: 1280px) {
+  .custom-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+

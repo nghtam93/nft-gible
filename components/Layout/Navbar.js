@@ -101,7 +101,7 @@ const Navbar = ({ wallet, openWallet, disconnectWallet }) => {
                 className="collapse navbar-collapse mean-menu"
                 id="navbarSupportedContent"
               >
-                <ul className="navbar-nav m-auto">
+                <ul className="navbar-nav m-auto custom-header">
                   <li className="nav-item">
                     <Link href="/">
                       <a className="nav-link active">
