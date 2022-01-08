@@ -1,26 +1,31 @@
 import React, { useState, useEffect } from "react";
-import Pagination from "../Common/Pagination";
-import Link from "next/link";
 import { Modal } from 'react-bootstrap'
+import {connect} from 'react-redux';
+import {closeWallet, connectWallet} from '../../redux/actions/walletActions';
 
-const Wallet = ({ isShow = true }) => {
-	console.log(isShow)
+const Wallet = ({ wallet, closeWallet, connectWallet }) => {
 
-  const [show, setShow] = useState(true)
-  const handleShow = () => setShow(true)
   const [connectorId, setConnectorId] = useState(null)
   const [indexWallet, setIndexWallet] = useState(null)
   const [classNone, setClassNone] = useState('')
 
   useEffect(() => {
     const updateClassNone = () => {
-      if (isShow === false) {
+      if (wallet.value === 0) {
         setClassNone('d-none')
-      }
+      } else {
+        setClassNone('')
+			}
     }
 
     updateClassNone()
-  }, [isShow])
+  }, [wallet])
+
+  useEffect(() => {
+    if(window.localStorage.getItem('connectorIdv2')) {
+			connectWallet()
+		}
+	}, [])
 
   const walletData = [
     {
@@ -49,8 +54,10 @@ const Wallet = ({ isShow = true }) => {
     },
   ]
 
-  const connectWallet = () => {
+  const handleConnectWallet = () => {
     window.localStorage.setItem('connectorIdv2', connectorId)
+		closeWallet()
+		connectWallet()
   }
 
   const chooseWallet = (name, index) => {
@@ -59,12 +66,12 @@ const Wallet = ({ isShow = true }) => {
   }
 	return (
 		<>
-			<button className={`${classNone} btn -wallet wow fadeInUp d-lg-inline-block`} type="button" onClick={handleShow}>
+			<button className={`${classNone} btn -wallet wow fadeInUp d-lg-inline-block`} type="button">
 				<span>Connect wallet</span>
 			</button>
 			<Modal
-				show={show}
-				onHide={() => setShow(false)}
+				show={wallet.value == 1}
+				onHide={closeWallet}
 				dialogClassName="modal-90w"
 				aria-labelledby="connectWalletTitle"
 				centered
@@ -79,7 +86,7 @@ const Wallet = ({ isShow = true }) => {
 						className="-close"
 						data-bs-dismiss="modal"
 						aria-label="Close"
-						onClick={() => setShow(false)}
+						onClick={closeWallet}
 					>
 						<i className="ri-close-fill" />
 					</button>
@@ -111,7 +118,7 @@ const Wallet = ({ isShow = true }) => {
 						</div>
 
 						{indexWallet !== null ? (
-							<button className="btn-wallet-submit js-attr-button" type="submit" onClick={connectWallet}>
+							<button className="btn-wallet-submit js-attr-button" type="submit" onClick={handleConnectWallet}>
 								<span>Connect wallet</span>
 							</button>
 						) : (
@@ -128,4 +135,14 @@ const Wallet = ({ isShow = true }) => {
 	);
 };
 
-export default Wallet;
+const mapStateToProps = state => ({
+	wallet: state.wallet
+});
+
+const mapDispatchToProps = {
+	closeWallet: closeWallet,
+	connectWallet: connectWallet,
+};
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Wallet);

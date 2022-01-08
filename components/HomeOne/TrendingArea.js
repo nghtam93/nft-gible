@@ -67,7 +67,7 @@ const TrendingArea = () => {
           <div className='trending-slider  pt-45'>
             {display ? (
               <OwlCarousel {...options}>
-                {data.map((item, index) => (
+                {data[0].map((item, index) => (
                   <div
                     className='trending-item'
                     key={index}

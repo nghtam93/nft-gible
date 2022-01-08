@@ -1,6 +1,6 @@
-import ItemDetailsDescription from "../components/ItemDetails/ItemDetailsDescription";
-import ItemDetailsHistory from "../components/ItemDetails/ItemDetailsHistory";
-import ItemDetailsUser from "../components/ItemDetails/ItemDetailsUser";
+import ItemDetailsDescription from "./ItemDetailsDescription";
+import ItemDetailsHistory from "./ItemDetailsHistory";
+import ItemDetailsUser from "./ItemDetailsUser";
 import React, { useState } from "react";
 
 const CutImage = () => {

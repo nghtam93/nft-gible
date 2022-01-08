@@ -1,19 +1,22 @@
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import data from '../../utils/resources'
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import data from "../../utils/resources";
+import { useRouter } from "next/router";
 
 const BannerArea = () => {
   //counter calculation
-  const [days, setDays] = useState('');
-  const [hours, setHours] = useState('');
-  const [minutes, setMinutes] = useState('');
-  const [seconds, setSeconds] = useState('');
+  const [days, setDays] = useState("");
+  const [hours, setHours] = useState("");
+  const [minutes, setMinutes] = useState("");
+  const [seconds, setSeconds] = useState("");
 
-  const img1 = data[0]
-  const img2 = data[1]
+  const img1 = data[0][0];
+  const img2 = data[0][1];
+
+  const router = useRouter();
 
   const comingSoonTime = () => {
-    let endTime = new Date('August 23, 2022 17:00:00 PDT');
+    let endTime = new Date("August 23, 2022 17:00:00 PDT");
     let endTimeParse = Date.parse(endTime) / 1000;
     let now = new Date();
     let nowParse = Date.parse(now) / 1000;
@@ -26,14 +29,14 @@ const BannerArea = () => {
     let countseconds = Math.floor(
       timeLeft - countdays * 86400 - counthours * 3600 - countminutes * 60
     );
-    if (counthours < '10') {
-      counthours = '0' + counthours;
+    if (counthours < "10") {
+      counthours = "0" + counthours;
     }
-    if (countminutes < '10') {
-      countminutes = '0' + countminutes;
+    if (countminutes < "10") {
+      countminutes = "0" + countminutes;
     }
-    if (countseconds < '10') {
-      countseconds = '0' + countseconds;
+    if (countseconds < "10") {
+      countseconds = "0" + countseconds;
     }
 
     setDays(countdays);
@@ -50,11 +53,11 @@ const BannerArea = () => {
 
   return (
     <>
-      <div className='banner-area'>
-        <div className='container-fluid'>
-          <div className='row align-items-center'>
-            <div className='col-lg-6'>
-              <div className='banner-content'>
+      <div className="banner-area">
+        <div className="container-fluid">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div className="banner-content">
                 <span>Buying & Selling NFT World</span>
                 <h1>Discover, Collect, and Sell Extraordinary NFTs</h1>
                 <p>
@@ -64,12 +67,12 @@ const BannerArea = () => {
                   scelerisque ut dui sed nulla morbi quam eget luctus. In a vel
                   morbi sed nisi.
                 </p>
-                <div className='banner-btn'>
-                  <Link href='/discover'>
-                    <a className='default-btn border-radius-5'>Explore More</a>
+                <div className="banner-btn">
+                  <Link href="/discover">
+                    <a className="default-btn border-radius-5">Explore More</a>
                   </Link>
-                  <Link href='/add-wallet'>
-                    <a className='default-btn two border-radius-5'>
+                  <Link href="/add-wallet">
+                    <a className="default-btn two border-radius-5">
                       Connect NFT
                     </a>
                   </Link>
@@ -77,90 +80,93 @@ const BannerArea = () => {
               </div>
             </div>
 
-            <div className='col-lg-6'>
-              <div className='banner-card-area'>
-                <div className='row'>
-                  <div className='col-lg-6 col-sm-6'>
-                    <div className='banner-card global-pointer'>
-                      <div className='banner-card-img'>
-                        <img
-                          src={img1.src.src}
-                          alt='Images'
-                        />
-                        <div className='banner-card-content'>
-                          <div className='card-left'>
-                            <span>Start Bid</span>
-                            <h3>{img1.price} ETH</h3>
-                          </div>
-                          <div className='card-right'>
-                            <h3>Remaining Time</h3>
-                            <div
-                              className='timer-text'
-                              data-countdown='2021/10/10'
-                            >
-                              {days}:{hours}:{minutes}:{seconds}
+            <div className="col-lg-6">
+              <div className="banner-card-area">
+                <div className="row">
+                  {data[3].map((item, index) => (
+                    <div
+                      className="col-lg-6 col-sm-6"
+                      key={index}
+                      onClick={() => router.push(`/item-details/${item.id}`)}
+                    >
+                      <div
+                        className={
+                          index == 1
+                            ? "banner-card  banner-card-mt"
+                            : "banner-card  global-pointer"
+                        }
+                      >
+                        <div className="banner-card-img">
+                          <img src={item.src.src} alt="Images" />
+                          <div className="banner-card-content">
+                            <div className="card-left">
+                              <span>Start Bid</span>
+                              <h3>{item.startBid} ETH</h3>
+                            </div>
+                            <div className="card-right">
+                              <h3>Remaining Time</h3>
+                              <div
+                                className="timer-text"
+                                data-countdown="2021/10/10"
+                              >
+                                {days}:{hours}:{minutes}:{seconds}
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
 
-                      <div className='content'>
-                        <div className='banner-user-list'>
-                          <div className='banner-user-list-img'>
-                            <Link href='/profile'>
-                              <a>
-                                <img
-                                  src={img1.imgAuthor.src}
-                                  alt='Images'
-                                />
-                              </a>
-                            </Link>
-                            <i className='ri-check-line'></i>
+                        <div className="content">
+                          <div className="banner-user-list">
+                            <div className="banner-user-list-img">
+                              <Link href="/profile">
+                                <a>
+                                  <img src={item.imgAuthor.src} alt="Images" />
+                                </a>
+                              </Link>
+                              <i className="ri-check-line"></i>
+                            </div>
+                            <h3>
+                              <Link href="/profile">
+                                <a>{item.position}</a>
+                              </Link>
+                            </h3>
+                            <span>
+                              Created by
+                              <Link href="/profile">
+                                <a>@{item.author}</a>
+                              </Link>
+                            </span>
                           </div>
-                          <h3>
-                            <Link href='/profile'>
-                              <a>Flowers in Concrete</a>
-                            </Link>
-                          </h3>
-                          <span>
-                            Created by
-                            <Link href='/profile'>
-                              <a>@{img1.author}</a>
-                            </Link>
-                          </span>
+                          <Link href="/profile">
+                            <a className="banner-user-btn">
+                              <i className="ri-arrow-right-line"></i>
+                            </a>
+                          </Link>
+                          <button
+                            type="button"
+                            className="default-btn border-radius-5"
+                          >
+                            Place Bid
+                          </button>
                         </div>
-                        <Link href='/profile'>
-                          <a className='banner-user-btn'>
-                            <i className='ri-arrow-right-line'></i>
-                          </a>
-                        </Link>
-                        <button
-                          type='button'
-                          className='default-btn border-radius-5'
-                        >
-                          Place Bid
-                        </button>
                       </div>
                     </div>
-                  </div>
+                  ))}
 
-                  <div className='col-lg-6 col-sm-6'>
-                    <div className='banner-card banner-card-mt'>
-                      <div className='banner-card-img global-pointer'>
-                        <img
-                          src={img2.src.src}
-                          alt='Images'
-                        />
-                        <div className='banner-card-content'>
-                          <div className='card-left'>
+                  {/* <div className="col-lg-6 col-sm-6">
+                    <div className="banner-card banner-card-mt">
+                      <div className="banner-card-img global-pointer">
+                        <img src={img2.src.src} alt="Images" />
+                        <div className="banner-card-content">
+                          <div className="card-left">
                             <span>Start Bid</span>
                             <h3>{img2.price} ETH</h3>
                           </div>
-                          <div className='card-right'>
+                          <div className="card-right">
                             <h3>Remaining Time</h3>
                             <div
-                              className='timer-text'
-                              data-countdown='2021/09/09'
+                              className="timer-text"
+                              data-countdown="2021/09/09"
                             >
                               {days}:{hours}:{minutes}:{seconds}
                             </div>
@@ -168,62 +174,59 @@ const BannerArea = () => {
                         </div>
                       </div>
 
-                      <div className='content'>
-                        <div className='banner-user-list'>
-                          <div className='banner-user-list-img'>
-                            <Link href='/profile'>
+                      <div className="content">
+                        <div className="banner-user-list">
+                          <div className="banner-user-list-img">
+                            <Link href="/profile">
                               <a>
-                                <img
-                                  src={img2.imgAuthor.src}
-                                  alt='Images'
-                                />
+                                <img src={img2.imgAuthor.src} alt="Images" />
                               </a>
                             </Link>
-                            <i className='ri-check-line'></i>
+                            <i className="ri-check-line"></i>
                           </div>
                           <h3>
-                            <Link href='/profile'>
+                            <Link href="/profile">
                               <a>Walking on Air</a>
                             </Link>
                           </h3>
                           <span>
                             Created by
-                            <Link href='/profile'>
+                            <Link href="/profile">
                               <a>@{img2.author}</a>
                             </Link>
                           </span>
                         </div>
-                        <Link href='/profile'>
-                          <a className='banner-user-btn'>
-                            <i className='ri-arrow-right-line'></i>
+                        <Link href="/profile">
+                          <a className="banner-user-btn">
+                            <i className="ri-arrow-right-line"></i>
                           </a>
                         </Link>
                         <button
-                          type='button'
-                          className='default-btn border-radius-5'
+                          type="button"
+                          className="default-btn border-radius-5"
                         >
                           Place Bid
                         </button>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className='banner-shape'>
-          <div className='shape-circle1'>
-            <img src='../images/home-one/circle1.png' alt='Images' />
+        <div className="banner-shape">
+          <div className="shape-circle1">
+            <img src="../images/home-one/circle1.png" alt="Images" />
           </div>
 
-          <div className='shape-circle2'>
-            <img src='../images/home-one/circle2.png' alt='Images' />
+          <div className="shape-circle2">
+            <img src="../images/home-one/circle2.png" alt="Images" />
           </div>
 
-          <div className='shape-bg'>
-            <img src='../images/home-one/bg-shape.png' alt='Images' />
+          <div className="shape-bg">
+            <img src="../images/home-one/bg-shape.png" alt="Images" />
           </div>
         </div>
       </div>
