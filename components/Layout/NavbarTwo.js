@@ -1,8 +1,11 @@
-import { useState } from 'react';
-import SearchModal from './SearchModal';
-import Link from '../../utils/ActiveLink';
-import { connect } from 'react-redux';
-import { openWallet, disconnectWallet } from '../../redux/actions/walletActions';
+import { useState } from "react";
+import SearchModal from "./SearchModal";
+import Link from "../../utils/ActiveLink";
+import { connect } from "react-redux";
+import {
+  openWallet,
+  disconnectWallet,
+} from "../../redux/actions/walletActions";
 
 const NavbarTwo = ({ wallet, openWallet, disconnectWallet }) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -35,9 +38,9 @@ const NavbarTwo = ({ wallet, openWallet, disconnectWallet }) => {
     window.addEventListener("scroll", showStickyMenu);
   }
   const handleDisconnectWallet = () => {
-    window.localStorage.removeItem('connectorIdv2')
-    disconnectWallet()
-  }
+    window.localStorage.removeItem("connectorIdv2");
+    disconnectWallet();
+  };
   return (
     <>
       <div className={sticky ? "is-sticky navbar-area two" : "navbar-area"}>
@@ -57,7 +60,7 @@ const NavbarTwo = ({ wallet, openWallet, disconnectWallet }) => {
               <div className="logo">
                 <Link href="/">
                   <a>
-                    <img src='../images/logo-2.png' alt='logo' />
+                    <img src="../images/logo-2.png" alt="logo" />
                   </a>
                 </Link>
               </div>
@@ -70,11 +73,11 @@ const NavbarTwo = ({ wallet, openWallet, disconnectWallet }) => {
             showMenu ? "show desktop-nav nav-area" : "desktop-nav nav-area"
           }
         >
-          <div className='container-fluid'>
-            <nav className='navbar navbar-expand-md navbar-light '>
-              <Link href='/'>
-                <a className='navbar-brand'>
-                  <img src='../images/logo-2.png' alt='Logo' />
+          <div className="container-fluid">
+            <nav className="navbar navbar-expand-md navbar-light ">
+              <Link href="/">
+                <a className="navbar-brand">
+                  <img src="../images/logo-2.png" alt="Logo" />
                 </a>
               </Link>
 
@@ -157,14 +160,12 @@ const NavbarTwo = ({ wallet, openWallet, disconnectWallet }) => {
 
                   <li className="nav-item">
                     <Link href="/item-details-multi/1">
-                      <a className="nav-link">
-                        Fragmentation image
-                      </a>
+                      <a className="nav-link">Fragmentation image</a>
                     </Link>
                   </li>
 
-                  <li className='nav-item'>
-                    <a href='#' className='nav-link'>
+                  <li className="nav-item">
+                    <a href="#" className="nav-link">
                       Pages
                       <i className="ri-arrow-down-s-line"></i>
                     </a>
@@ -258,6 +259,37 @@ const NavbarTwo = ({ wallet, openWallet, disconnectWallet }) => {
                     </ul>
                   </li>
 
+                  <li className="nav-item">
+                    <Link href="/mint" activeClassName="active">
+                      <a>Create</a>
+                    </Link>
+                  </li>
+                  {!wallet.is_connect && (
+                    <li>
+                      <a className="active global-pointer" onClick={openWallet}>
+                        Connect Wallet
+                      </a>
+                    </li>
+                  )}
+
+                  {wallet.is_connect && (
+                    <li className="nav-item">
+                      <a href="#" className="nav-link wallet-address">
+                        0x90e49D0...a78E
+                        <i className="ri-arrow-down-s-line"></i>
+                      </a>
+                      <ul className="dropdown-menu">
+                        <li className="nav-item">
+                          <a
+                            className="nav-link active global-pointer"
+                            onClick={handleDisconnectWallet}
+                          >
+                            Disconnect
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  )}
                   {/* <li className='nav-item'>
                     <a href='#' className='nav-link'>
                       Community
@@ -331,40 +363,47 @@ const NavbarTwo = ({ wallet, openWallet, disconnectWallet }) => {
                     </Link>
                   </li> */}
                 </ul>
-                <div className='d-flex align-items-center'>
-                  <div className='others-options'>
-                    <ul className='optional-item-list'>
+                {/* <div className="d-flex align-items-center">
+                  <div className="others-options">
+                    <ul className="optional-item-list">
                       <li>
-                        <Link href='/mint' activeClassName='active'>
+                        <Link href="/mint" activeClassName="active">
                           <a>Create</a>
                         </Link>
                       </li>
-                      {!wallet.is_connect &&
+                      {!wallet.is_connect && (
                         <li>
-                          <a className='active global-pointer' onClick={openWallet}>Connect Wallet</a>
+                          <a
+                            className="active global-pointer"
+                            onClick={openWallet}
+                          >
+                            Connect Wallet
+                          </a>
                         </li>
-                      }
+                      )}
                     </ul>
                   </div>
-                  <ul className='navbar-nav m-auto'>
-                    {wallet.is_connect &&
-                      <li className='nav-item'>
-                        <a href='#' className='nav-link wallet-address'>
-                        0x90e49D0...a78E
-                          <i className='ri-arrow-down-s-line'></i>
+                  <ul className="navbar-nav m-auto">
+                    {wallet.is_connect && (
+                      <li className="nav-item">
+                        <a href="#" className="nav-link wallet-address">
+                          0x90e49D0...a78E
+                          <i className="ri-arrow-down-s-line"></i>
                         </a>
-                        <ul className='dropdown-menu'>
-                          <li className='nav-item'>
+                        <ul className="dropdown-menu">
+                          <li className="nav-item">
                             <a
-                              className='nav-link active global-pointer'
+                              className="nav-link active global-pointer"
                               onClick={handleDisconnectWallet}
-                            >Disconnect</a>
+                            >
+                              Disconnect
+                            </a>
                           </li>
                         </ul>
                       </li>
-                    }
+                    )}
                   </ul>
-                </div>
+                </div> */}
               </div>
             </nav>
           </div>
@@ -422,13 +461,13 @@ const NavbarTwo = ({ wallet, openWallet, disconnectWallet }) => {
   );
 };
 
-const mapStateToProps = state => ({
-	wallet: state.wallet
+const mapStateToProps = (state) => ({
+  wallet: state.wallet,
 });
 
 const mapDispatchToProps = {
-	openWallet: openWallet,
-  disconnectWallet: disconnectWallet
+  openWallet: openWallet,
+  disconnectWallet: disconnectWallet,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(NavbarTwo);
