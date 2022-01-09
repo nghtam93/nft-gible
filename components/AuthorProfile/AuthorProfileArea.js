@@ -8,7 +8,7 @@ const Tabs = dynamic(
 import { resetIdCounter, Tab, TabList, TabPanel } from "react-tabs";
 resetIdCounter();
 
-const AuthorProfileArea = () => {
+const AuthorProfileArea = ({ isAuthor }) => {
 	//counter calculation
 	const [days, setDays] = useState("");
 	const [hours, setHours] = useState("");

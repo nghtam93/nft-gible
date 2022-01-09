@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
-const ItemDetailsDescription = () => {
+const ItemDetailsDescription = ({ id }) => {
+  const url = `/item-details-multi/${id || 1}`
   return (
     <>
       <div className="section-title">
@@ -105,9 +106,9 @@ const ItemDetailsDescription = () => {
           <a className="default-btn border-radius-50">Place Bid</a>
         </Link>
 
-        <Link href="/item-details-multi/1">
+        <Link href={url}>
           <a className="default-btn border-radius-50">
-            Place Fragmentation image
+            Place Fragmented Arts
           </a>
         </Link>
       </div>

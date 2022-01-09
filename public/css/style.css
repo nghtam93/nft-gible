@@ -2631,7 +2631,19 @@ Trending Area
   height: 326px;
   object-fit: cover;
 }
-
+@media (max-width: 767px) {
+  .trending-item .trending-img a img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .auction-item .auction-item-img img {
+    width: 500px !important;
+    object-fit: cover !important;
+  }
+  .featured-item-img img {
+    width: 500px !important;
+  }
+}
 .trending-item .trending-img .default-btn {
   top: 50%;
   left: 50%;
@@ -3206,6 +3218,8 @@ Item Details Area
 
 .item-details-img img {
   border-radius: 15px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .item-details-img span {

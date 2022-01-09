@@ -1,16 +1,16 @@
 .background-table {
   background-image: url("../images/test.jpg");
-  width: 762px;
+  width: 100%;
   height: 545px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 table,
 th,
 td {
-  border: 5px solid rgb(104, 75, 75);
+  border: 5px solid #0A1831;
   color: white;
   text-align: center;
   font-size: 20px;
@@ -18,5 +18,5 @@ td {
 }
 
 .border {
-  border: 5.1px solid red !important;
+  border: 5.1px solid #f30106 !important;
 }

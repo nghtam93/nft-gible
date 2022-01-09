@@ -14,13 +14,8 @@ resetIdCounter();
 const FeaturedArea = ({ title, pagination }) => {
   const router = useRouter();
   //counter calculation
-  const [days, setDays] = useState("");
-  const [hours, setHours] = useState("");
-  const [minutes, setMinutes] = useState("");
-  const [seconds, setSeconds] = useState("");
-
-  const comingSoonTime = () => {
-    let endTime = new Date("August 23, 2022 17:00:00 PDT");
+  const [listDays, setListDays] = useState([]);
+  const comingSoonTime = (endTime = new Date("August 23, 2022 17:00:00 PDT")) => {
     let endTimeParse = Date.parse(endTime) / 1000;
     let now = new Date();
     let nowParse = Date.parse(now) / 1000;
@@ -43,17 +38,33 @@ const FeaturedArea = ({ title, pagination }) => {
       countseconds = "0" + countseconds;
     }
 
-    setDays(countdays);
-    setHours(counthours);
-    setMinutes(countminutes);
-    setSeconds(countseconds);
+    return { countdays, counthours, countminutes, countseconds }
   };
+
+  const setState = () => {
+    let time = comingSoonTime();
+    let time1 = comingSoonTime(new Date("July 20, 2022 17:00:00 PDT"));
+    let time2 = comingSoonTime(new Date("March 20, 2022 17:00:00 PDT"));
+    let time3 = comingSoonTime(new Date("May 2, 2022 17:00:00 PDT"));
+    let time4 = comingSoonTime(new Date("December 2, 2022 17:00:00 PDT"));
+    let time5 = comingSoonTime(new Date("January 2, 2023 17:00:00 PDT"));
+    let time6 = comingSoonTime(new Date("October 2, 2022 17:00:00 PDT"));
+    let time7 = comingSoonTime(new Date("November 2, 2022 17:00:00 PDT"));
+
+    setListDays([time, time1, time2, time3, time4, time5, time6, time7])
+  }
 
   useEffect(() => {
     setInterval(() => {
-      comingSoonTime();
+      setState();
     }, 1000);
   }, []);
+
+  const getTextTime = (index) => {
+    if(!listDays[index]) { return '' }
+
+    return `${listDays[index].countdays}:${listDays[index].countdays}:${listDays[index].countminutes}:${listDays[index].countseconds}`
+  }
 
   return (
     <>
@@ -131,8 +142,7 @@ const FeaturedArea = ({ title, pagination }) => {
                               <div
                                 className="featured-item-clock"
                                 data-countdown="2021/09/09"
-                              >
-                                {days}:{hours}:{minutes}:{seconds}
+                              > {getTextTime(index)}
                               </div>
                             </div>
 
@@ -161,11 +171,11 @@ const FeaturedArea = ({ title, pagination }) => {
                                     />
                                   </li>
                                   <li className="title">
-                                    10+ People Placed Bid
+                                    {Math.floor(Math.random() * 100)}+ People Placed Bid
                                   </li>
                                 </ul>
                                 <p>
-                                  <i className="ri-heart-line"></i> 122
+                                  <i className="ri-heart-line"></i> {Math.floor(Math.random() * 1000)}
                                 </p>
                               </div>
                             </div>
@@ -215,7 +225,7 @@ const FeaturedArea = ({ title, pagination }) => {
                                 className="featured-item-clock"
                                 data-countdown="2021/09/09"
                               >
-                                {days}:{hours}:{minutes}:{seconds}
+                                {getTextTime(index)}
                               </div>
                             </div>
 
@@ -244,11 +254,11 @@ const FeaturedArea = ({ title, pagination }) => {
                                     />
                                   </li>
                                   <li className="title">
-                                    10+ People Placed Bid
+                                  {Math.floor(Math.random() * 100)}+ People Placed Bid
                                   </li>
                                 </ul>
                                 <p>
-                                  <i className="ri-heart-line"></i> 122
+                                  <i className="ri-heart-line"></i> {Math.floor(Math.random() * 1000)}
                                 </p>
                               </div>
                             </div>
@@ -297,7 +307,7 @@ const FeaturedArea = ({ title, pagination }) => {
                                 className="featured-item-clock"
                                 data-countdown="2021/09/09"
                               >
-                                {days}:{hours}:{minutes}:{seconds}
+                                {getTextTime(index)}
                               </div>
                             </div>
 
@@ -326,11 +336,11 @@ const FeaturedArea = ({ title, pagination }) => {
                                     />
                                   </li>
                                   <li className="title">
-                                    10+ People Placed Bid
+                                  {Math.floor(Math.random() * 100)}+ People Placed Bid
                                   </li>
                                 </ul>
                                 <p>
-                                  <i className="ri-heart-line"></i> 122
+                                  <i className="ri-heart-line"></i> {Math.floor(Math.random() * 1000)}
                                 </p>
                               </div>
                             </div>
@@ -379,7 +389,7 @@ const FeaturedArea = ({ title, pagination }) => {
                                 className="featured-item-clock"
                                 data-countdown="2021/09/09"
                               >
-                                {days}:{hours}:{minutes}:{seconds}
+                                {getTextTime(index)}
                               </div>
                             </div>
 
@@ -408,11 +418,11 @@ const FeaturedArea = ({ title, pagination }) => {
                                     />
                                   </li>
                                   <li className="title">
-                                    10+ People Placed Bid
+                                  {Math.floor(Math.random() * 100)}+ People Placed Bid
                                   </li>
                                 </ul>
                                 <p>
-                                  <i className="ri-heart-line"></i> 122
+                                  <i className="ri-heart-line"></i> {Math.floor(Math.random() * 1000)}
                                 </p>
                               </div>
                             </div>
@@ -461,7 +471,7 @@ const FeaturedArea = ({ title, pagination }) => {
                                 className="featured-item-clock"
                                 data-countdown="2021/09/09"
                               >
-                                {days}:{hours}:{minutes}:{seconds}
+                                {getTextTime(index)}
                               </div>
                             </div>
 
@@ -490,11 +500,11 @@ const FeaturedArea = ({ title, pagination }) => {
                                     />
                                   </li>
                                   <li className="title">
-                                    10+ People Placed Bid
+                                  {Math.floor(Math.random() * 100)}+ People Placed Bid
                                   </li>
                                 </ul>
                                 <p>
-                                  <i className="ri-heart-line"></i> 122
+                                  <i className="ri-heart-line"></i> {Math.floor(Math.random() * 1000)}
                                 </p>
                               </div>
                             </div>

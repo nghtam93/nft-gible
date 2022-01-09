@@ -163,13 +163,6 @@ const Navbar = ({ wallet, openWallet, disconnectWallet }) => {
                       <a className="nav-link">Activity</a>
                     </Link>
                   </li>
-
-                  <li className="nav-item">
-                    <Link href="/item-details-multi/1">
-                      <a className="nav-link">Fragmentation image</a>
-                    </Link>
-                  </li>
-
                   <li className="nav-item">
                     <a href="#" className="nav-link">
                       Pages
@@ -349,7 +342,7 @@ const Navbar = ({ wallet, openWallet, disconnectWallet }) => {
                       {!wallet.is_connect && (
                         <li>
                           <a
-                            className="active global-pointer"
+                            className="active global-pointer wallet-address"
                             onClick={openWallet}
                           >
                             Connect Wallet

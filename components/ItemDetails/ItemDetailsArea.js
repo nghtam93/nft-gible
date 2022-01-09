@@ -35,7 +35,9 @@ const ItemDetailsArea = ({ id }) => {
 
             <div className="col-lg-5">
               <div className="item-details-dsce">
-                <ItemDetailsDescription />
+                <ItemDetailsDescription
+                  id={id}
+                />
 
                 <ItemDetailsUser />
               </div>

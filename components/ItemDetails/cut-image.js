@@ -9,17 +9,17 @@ const CutImage = () => {
       row: [
         {
           id: 1,
-          child: "image 1",
+          child: "Part 1",
         },
-        { id: 2, child: "image 2" },
-        { id: 3, child: "image 5" },
+        { id: 2, child: "Part 2" },
+        { id: 3, child: "Part 5" },
       ],
     },
     {
       row: [
-        { id: 4, child: "image 3" },
-        { id: 5, child: "image 4" },
-        { id: 6, child: "image 6" },
+        { id: 4, child: "Part 3" },
+        { id: 5, child: "Part 4" },
+        { id: 6, child: "Part 6" },
       ],
     },
   ];

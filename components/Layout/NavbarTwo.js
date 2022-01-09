@@ -157,13 +157,6 @@ const NavbarTwo = ({ wallet, openWallet, disconnectWallet }) => {
                       <a className="nav-link">Activity</a>
                     </Link>
                   </li>
-
-                  <li className="nav-item">
-                    <Link href="/item-details-multi/1">
-                      <a className="nav-link">Fragmentation image</a>
-                    </Link>
-                  </li>
-
                   <li className="nav-item">
                     <a href="#" className="nav-link">
                       Pages
