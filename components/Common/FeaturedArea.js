@@ -143,8 +143,8 @@ const FeaturedArea = ({ title, pagination }) => {
                                 </Link>
                               </h3>
                               <div className="content-in">
-                                <span>100 ETH 12/14</span>
-                                <h4>Bid 80 ETH </h4>
+                                <span>{item.startBid} ETH 12/14</span>
+                                <h4>Bid {item.bid} ETH </h4>
                               </div>
                               <div className="featured-content-list">
                                 <ul>
@@ -304,12 +304,12 @@ const FeaturedArea = ({ title, pagination }) => {
                             <div className="content">
                               <h3>
                                 <Link href="/profile">
-                                  <a>Industrial Revolution</a>
+                                  <a>{item.position}</a>
                                 </Link>
                               </h3>
                               <div className="content-in">
-                                <span>100 ETH 12/14</span>
-                                <h4>Bid 80 ETH </h4>
+                                <span>{item.startBid} ETH 12/14</span>
+                                <h4>Bid {item.bid} ETH </h4>
                               </div>
                               <div className="featured-content-list">
                                 <ul>

@@ -265,36 +265,6 @@ const Navbar = ({ wallet, openWallet, disconnectWallet }) => {
                     </ul>
                   </li>
 
-                  <li className="nav-item">
-                    <Link href="/mint" activeClassName="active">
-                      <a>Create</a>
-                    </Link>
-                  </li>
-                  {!wallet.is_connect ? (
-                    <li className="nav-item">
-                      <a className="active global-pointer" onClick={openWallet}>
-                        Connect Wallet
-                      </a>
-                    </li>
-                  ) : (
-                    <li className="nav-item">
-                      <a href="#" className="nav-link wallet-address">
-                        0x90e49D0...a78E
-                        <i className="ri-arrow-down-s-line"></i>
-                      </a>
-                      <ul className="dropdown-menu">
-                        <li className="nav-item">
-                          <a
-                            className="nav-link active global-pointer"
-                            onClick={handleDisconnectWallet}
-                          >
-                            Disconnect
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                  )}
-
                   {/* <li className='nav-item'>
                     <a href='#' className='nav-link'>
                       Community
@@ -368,7 +338,7 @@ const Navbar = ({ wallet, openWallet, disconnectWallet }) => {
                     </Link>
                   </li> */}
                 </ul>
-                {/* <div className="d-flex align-items-center">
+                <div className="d-flex align-items-center">
                   <div className="others-options">
                     <ul className="optional-item-list">
                       <li>
@@ -388,7 +358,7 @@ const Navbar = ({ wallet, openWallet, disconnectWallet }) => {
                       )}
                     </ul>
                   </div>
-                  <ul className="navbar-nav m-auto">
+                  <ul className="navbar-nav m-auto hide">
                     {wallet.is_connect && (
                       <li className="nav-item">
                         <a href="#" className="nav-link wallet-address">
@@ -408,7 +378,7 @@ const Navbar = ({ wallet, openWallet, disconnectWallet }) => {
                       </li>
                     )}
                   </ul>
-                </div> */}
+                </div>
               </div>
             </nav>
           </div>
