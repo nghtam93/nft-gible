@@ -2,8 +2,9 @@ import ItemDetailsDescription from "./ItemDetailsDescription";
 import ItemDetailsHistory from "./ItemDetailsHistory";
 import ItemDetailsUser from "./ItemDetailsUser";
 import React, { useState } from "react";
+import dataObj from "../../utils/resources";
 
-const CutImage = () => {
+const CutImage = ({ id }) => {
   const data = [
     {
       row: [
@@ -24,6 +25,16 @@ const CutImage = () => {
     },
   ];
 
+  const tmpId = id || 1;
+
+  let item;
+  dataObj.forEach((element) => {
+    if (!item) {
+      item = element.find((item) => item.id === +tmpId);
+    }
+  });
+
+  console.log(item)
   const handleClickItem = (index) => {
     alert("click me" + index);
   };
@@ -38,7 +49,7 @@ const CutImage = () => {
             <div className="item-details-left-side pr-20">
               <div className="item-details-img">
                 {/* <img src={item.src.src} alt="Images" /> */}
-                <table className="background-table">
+                <table className="background-table" style={{ 'background-image': `url("${item.src.src}")` }}>
                   {data.map((item, index) => (
                     <tr key={index.toString()}>
                       {item.row.map((child, idx) => (

@@ -14,7 +14,6 @@ const ItemDetailsArea = ({ id }) => {
     }
   });
 
-  console.log(item);
   return (
     <>
       <div className="item-details-area pt-100 pb-70">
