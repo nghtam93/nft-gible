@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import shape1 from "../../public/images/inner-banner/inner-shape1.png"
+import shape2 from "../../public/images/inner-banner/inner-shape2.png"
 
 const PageBanner = ({ bannerHeading, parentTitle, pageTitle, bg }) => {
   return (
@@ -20,8 +22,8 @@ const PageBanner = ({ bannerHeading, parentTitle, pageTitle, bg }) => {
             </ul>
 
             <div className="inner-shape">
-              <img src="../images/inner-banner/inner-shape1.png" alt="Images" />
-              <img src="../images/inner-banner/inner-shape2.png" alt="Images" />
+              <img src={shape1.src} alt="Images" />
+              <img src={shape2.src} alt="Images" />
             </div>
           </div>
         </div>

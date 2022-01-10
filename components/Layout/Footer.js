@@ -1,4 +1,8 @@
 import Link from "next/link";
+import footerLogo from '../../public/images/logo-2.png'
+import shape from '../../public/images/shape/shape-bg.png'
+import shape1 from '../../public/images/shape/shape1.png'
+import shape2 from '../../public/images/shape/shape2.png'
 
 const Footer = () => {
 	return (
@@ -12,7 +16,7 @@ const Footer = () => {
 									<Link href="/">
 										<a>
 											<img
-												src="../images/footer-logo.png"
+												src={footerLogo.src}
 												alt="Footer Logo"
 											/>
 										</a>
@@ -53,22 +57,22 @@ const Footer = () => {
 								<h3>Marketplace</h3>
 								<ul className="footer-list">
 									<li>
-										<Link href="/discover-1">
+										<Link href="/discover">
 											<a>Art</a>
 										</Link>
 									</li>
 									<li>
-										<Link href="/discover-1">
+										<Link href="/discover">
 											<a>All NFTs</a>
 										</Link>
 									</li>
 									<li>
-										<Link href="/discover-1">
+										<Link href="/discover">
 											<a>Music</a>
 										</Link>
 									</li>
 									<li>
-										<Link href="/discover-1">
+										<Link href="/discover">
 											<a>Trending Cards</a>
 										</Link>
 									</li>
@@ -167,15 +171,15 @@ const Footer = () => {
 
 				<div className="footer-shape">
 					<div className="footer-shape1">
-						<img src="../images/shape/shape-bg.png" alt="Images" />
+						<img src={shape.src} alt="Images" />
 					</div>
 
 					<div className="footer-shape2">
-						<img src="../images/shape/shape1.png" alt="Images" />
+						<img src={shape1.src} alt="Images" />
 					</div>
 
 					<div className="footer-shape3">
-						<img src="../images/shape/shape2.png" alt="Images" />
+						<img src={shape2.src} alt="Images" />
 					</div>
 				</div>
 			</footer>

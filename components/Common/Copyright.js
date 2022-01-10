@@ -11,7 +11,7 @@ const Copyright = () => {
 								<p>
 									© 2021 Gible. All Rights Reserved by{" "}
 									<a href="https://hibootstrap.com/">
-										HiBootstrap
+										Meta NFT
 									</a>
 								</p>
 

@@ -132,8 +132,13 @@ const Navbar = ({ wallet, openWallet, disconnectWallet }) => {
                     </Link>
                   </li>
                   <li className="nav-item">
+                    <Link href="/author-profile" activeClassName="active">
+                      <a className="nav-link">Author Profile</a>
+                    </Link>
+                  </li>
+                  <li className="nav-item">
                     <Link href="/profile" activeClassName="active">
-                      <a className="nav-link">Authors Profile</a>
+                      <a className="nav-link">Profile</a>
                     </Link>
                   </li>
                   <li className="nav-item">

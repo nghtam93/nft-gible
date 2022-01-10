@@ -1,5 +1,8 @@
 import React from "react";
 import Link from "next/link";
+import img1 from '../../public/images/Item-details/Item-details-user2.jpg'
+import img2 from '../../public/images/Item-details/Item-details-user1.jpg'
+import img3 from '../../public/images/Item-details/Item-details-user4.jpg'
 
 const ItemDetailsDescription = ({ id }) => {
   const url = `/item-details-multi/${id || 1}`
@@ -21,7 +24,7 @@ const ItemDetailsDescription = ({ id }) => {
             <div className="content">
               <div className="images">
                 <img
-                  src="../images/Item-details/Item-details-user2.jpg"
+                  src={img1.src}
                   alt="Images"
                 />
                 <i className="ri-check-line"></i>
@@ -38,7 +41,7 @@ const ItemDetailsDescription = ({ id }) => {
             <div className="content">
               <div className="images">
                 <img
-                  src="../images/Item-details/Item-details-user1.jpg"
+                  src={img2.src}
                   alt="Images"
                 />
               </div>
@@ -78,7 +81,7 @@ const ItemDetailsDescription = ({ id }) => {
       <div className="item-details-user-item">
         <div className="images">
           <img
-            src="../images/Item-details/Item-details-user4.jpg"
+            src={img3.src}
             alt="Images"
           />
           <i className="ri-check-line"></i>

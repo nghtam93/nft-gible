@@ -2,6 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Modal } from 'react-bootstrap'
 import {connect} from 'react-redux';
 import {closeWallet, connectWallet} from '../../redux/actions/walletActions';
+import meta from '../../public/images/wallet/logo-metamask.png'
+import bnb from '../../public/images/wallet/logo-bnb-light.png'
+import trust from '../../public/images/wallet/trust.png'
+import safepal from '../../public/images/wallet/safepal.png'
+
 
 const Wallet = ({ wallet, closeWallet, connectWallet }) => {
 
@@ -30,25 +35,25 @@ const Wallet = ({ wallet, closeWallet, connectWallet }) => {
   const walletData = [
     {
       name: 'Metamask',
-      logoUrl: '../images/wallet/logo-metamask.png',
+      logoUrl: meta,
       connectorId: 'injected',
       address: '',
     },
     {
       name: 'Binance Smart Chain',
-      logoUrl: '../images/wallet/logo-bnb-light.png',
+      logoUrl: bnb,
       connectorId: 'bsc',
       address: '',
     },
     {
       name: 'Trust',
-      logoUrl: '../images/wallet/trust.png',
+      logoUrl: trust,
       connectorId: 'injected',
       address: '',
     },
     {
       name: 'SafePal',
-      logoUrl: '../images/wallet/safepal.png',
+      logoUrl: safepal,
       connectorId: 'injected',
       address: '',
     },
@@ -66,7 +71,7 @@ const Wallet = ({ wallet, closeWallet, connectWallet }) => {
   }
 	return (
 		<>
-			<button className={`${classNone} btn -wallet wow fadeInUp d-lg-inline-block`} type="button">
+			<button className={`${classNone} btn -wallet wow fadeInUp`} type="button">
 				<span>Connect wallet</span>
 			</button>
 			<Modal
@@ -110,7 +115,7 @@ const Wallet = ({ wallet, closeWallet, connectWallet }) => {
 											<span>{item.name}</span>
 										</label>
 										<div className="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0">
-											<img src={item.logoUrl} alt="" />
+											<img src={item.logoUrl.src} alt="" />
 										</div>
 									</li>
 								))}

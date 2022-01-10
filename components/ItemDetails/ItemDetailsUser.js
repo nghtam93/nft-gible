@@ -1,4 +1,8 @@
 import React from 'react';
+import img1 from '../../public/images/Item-details/Item-details-user4.jpg'
+import img2 from '../../public/images/Item-details/Item-details-user5.jpg'
+import img3 from '../../public/images/Item-details/Item-details-user6.jpg'
+import img4 from '../../public/images/Item-details/Item-details-user7.jpg'
 
 const ItemDetailsUser = () => {
   return (
@@ -12,7 +16,7 @@ const ItemDetailsUser = () => {
               <div className='item-details-user-card'>
                 <div className='item-details-card-img'>
                   <img
-                    src='../images/Item-details/Item-details-user4.jpg'
+                    src={img1.src}
                     alt='Images'
                   />
                 </div>
@@ -35,7 +39,7 @@ const ItemDetailsUser = () => {
               <div className='item-details-user-card'>
                 <div className='item-details-card-img'>
                   <img
-                    src='../images/Item-details/Item-details-user5.jpg'
+                    src={img2.src}
                     alt='Images'
                   />
                 </div>
@@ -58,7 +62,7 @@ const ItemDetailsUser = () => {
               <div className='item-details-user-card'>
                 <div className='item-details-card-img'>
                   <img
-                    src='../images/Item-details/Item-details-user6.jpg'
+                    src={img3.src}
                     alt='Images'
                   />
                 </div>
@@ -81,7 +85,7 @@ const ItemDetailsUser = () => {
               <div className='item-details-user-card'>
                 <div className='item-details-card-img'>
                   <img
-                    src='../images/Item-details/Item-details-user7.jpg'
+                    src={img4.src}
                     alt='Images'
                   />
                 </div>

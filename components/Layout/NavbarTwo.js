@@ -6,6 +6,7 @@ import {
   openWallet,
   disconnectWallet,
 } from "../../redux/actions/walletActions";
+import logo from '../../public/images/logo-2.png'
 
 const NavbarTwo = ({ wallet, openWallet, disconnectWallet }) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -60,7 +61,7 @@ const NavbarTwo = ({ wallet, openWallet, disconnectWallet }) => {
               <div className="logo">
                 <Link href="/">
                   <a>
-                    <img src="../images/logo-2.png" alt="logo" />
+                    <img src={logo.src} alt="logo" />
                   </a>
                 </Link>
               </div>
@@ -77,7 +78,7 @@ const NavbarTwo = ({ wallet, openWallet, disconnectWallet }) => {
             <nav className="navbar navbar-expand-md navbar-light ">
               <Link href="/">
                 <a className="navbar-brand">
-                  <img src="../images/logo-2.png" alt="Logo" />
+                  <img src={logo.src} alt="Logo" />
                 </a>
               </Link>
 
@@ -125,13 +126,18 @@ const NavbarTwo = ({ wallet, openWallet, disconnectWallet }) => {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/profile" activeClassName="active">
-                      <a className="nav-link">Authors Profile</a>
+                    <Link href="/author-profile" activeClassName="active">
+                      <a className="nav-link">Author Profile</a>
                     </Link>
                   </li>
                   <li className="nav-item">
                     <Link href="/mint" activeClassName="active">
                       <a className="nav-link">Mint</a>
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link href="/profile" activeClassName="active">
+                      <a className="nav-link">Profile</a>
                     </Link>
                   </li>
                 </ul>
