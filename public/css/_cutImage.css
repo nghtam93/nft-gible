@@ -26,3 +26,9 @@ td {
   height: 100%;
   min-height: 300px;
 }
+
+.auction-card-img .painting img {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+}

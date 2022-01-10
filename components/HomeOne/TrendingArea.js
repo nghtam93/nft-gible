@@ -71,10 +71,10 @@ const TrendingArea = () => {
                   <div
                     className='trending-item'
                     key={index}
-                    onClick={() => router.push(`/item-details/${item.id}`)}
+                    onClick={() => router.push(`/item-details-multi/${item.id}`)}
                   >
                     <div className='trending-img'>
-                      <Link href={`/item-details/${item.id}`}>
+                      <Link href={`/item-details-multi/${item.id}`}>
                         <a>
                           <img
                             src={item.src.src}

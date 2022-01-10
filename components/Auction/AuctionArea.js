@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Pagination from "../Common/Pagination";
 import Link from "next/link";
+import data from "../../utils/resources";
 
 const AuctionArea = () => {
 	//counter calculation
@@ -54,13 +55,14 @@ const AuctionArea = () => {
 					</div>
 
 					<div className="row justify-content-center pt-45">
+					{data[4][2].map((item, index) => (
 						<div className="col-lg-4 col-md-6">
 							<div className="auction-card">
 								<div className="auction-card-img">
-									<Link href="/item-details">
-										<a>
+									<Link href={`/item-details/${item.id}`}>
+										<a className="painting">
 											<img
-												src="../images/auctions/auctions-style1.jpg"
+												src={item.src.src}
 												alt="Images"
 											/>
 										</a>
@@ -69,26 +71,28 @@ const AuctionArea = () => {
 										<Link href="/profile">
 											<a className="auction-card-user-option">
 												<img
-													src="../images/auctions/auctions-user1.jpg"
+													src={item.imgAuthor.src}
 													alt="Images"
 												/>
-												<span>Created by @Adison</span>
+												<span>Created by @{item.author}</span>
 											</a>
 										</Link>
 									</div>
-									<div className="auction-card-into">
-										<h3>Remaining Time</h3>
-										<div className="auction-timer">
-											<div
-												className="auction-title"
-												data-countdown="2021/10/10"
-											>
-												{days}:{hours}:{minutes}:
-												{seconds}
+									{index == 2  &&
+										<div className="auction-card-into">
+											<h3>Remaining Time</h3>
+											<div className="auction-timer">
+												<div
+													className="auction-title"
+													data-countdown="2021/10/10"
+												>
+													{days}:{hours}:{minutes}:
+													{seconds}
+												</div>
 											</div>
 										</div>
+									}
 									</div>
-								</div>
 
 								<div className="content">
 									<h3>
@@ -98,340 +102,26 @@ const AuctionArea = () => {
 										</Link>
 									</h3>
 									<p>
-										<i className="ri-heart-line"></i> 142
+										<i className="ri-heart-line"></i>
+										{Math.floor(Math.random() * 100)}
 									</p>
 									<div className="auction-card-content">
 										<div className="card-left">
 											<span>Start Bid</span>
-											<h4>15,00 ETH</h4>
+											<h4>{item.price} ETH</h4>
 										</div>
 										<div className="card-right">
 											<span>Highest Bid</span>
-											<h4>15,00 ETH</h4>
+											<h4>{item.bid} ETH</h4>
 										</div>
 									</div>
-									<Link href="/auction">
+									<Link href={`/item-detail/${item.id}`}>
 										<a className="place-btn">Place Bid</a>
 									</Link>
 								</div>
 							</div>
 						</div>
-
-						<div className="col-lg-4 col-md-6">
-							<div className="auction-card">
-								<div className="auction-card-img">
-									<Link href="/auction">
-										<a>
-											<img
-												src="../images/auctions/auctions-style2.jpg"
-												alt="Images"
-											/>
-										</a>
-									</Link>
-									<div className="auction-card-user">
-										<Link href="/profile">
-											<a className="auction-card-user-option">
-												<img
-													src="../images/auctions/auctions-user2.jpg"
-													alt="Images"
-												/>
-												<span>Created by @Emilia</span>
-											</a>
-										</Link>
-									</div>
-									<div className="auction-card-into">
-										<h3>Remaining Time</h3>
-										<div className="auction-timer">
-											<div
-												className="auction-title"
-												data-countdown="2021/10/10"
-											>
-												{days}:{hours}:{minutes}:
-												{seconds}
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div className="content">
-									<h3>
-										{" "}
-										<Link href="/auction">
-											<a>Walking On Air</a>
-										</Link>
-									</h3>
-									<p>
-										<i className="ri-heart-line"></i> 162
-									</p>
-									<div className="auction-card-content">
-										<div className="card-left">
-											<span>Start Bid</span>
-											<h4>16,00 ETH</h4>
-										</div>
-										<div className="card-right">
-											<span>Highest Bid</span>
-											<h4>12,00 ETH</h4>
-										</div>
-									</div>
-									<Link href="/add-wallet">
-										<a className="place-btn">Place Bid</a>
-									</Link>
-								</div>
-							</div>
-						</div>
-
-						<div className="col-lg-4 col-md-6">
-							<div className="auction-card">
-								<div className="auction-card-img">
-									<Link href="/auction">
-										<a>
-											<img
-												src="../images/auctions/auctions-style3.jpg"
-												alt="Images"
-											/>
-										</a>
-									</Link>
-									<div className="auction-card-user">
-										<Link href="/profile">
-											<a className="auction-card-user-option">
-												<img
-													src="../images/auctions/auctions-user3.jpg"
-													alt="Images"
-												/>
-												<span>Created by @Daniel</span>
-											</a>
-										</Link>
-									</div>
-									<div className="auction-card-into">
-										<h3>Remaining Time</h3>
-										<div className="auction-timer">
-											<div
-												className="auction-title"
-												data-countdown="2021/10/10"
-											>
-												{days}:{hours}:{minutes}:
-												{seconds}
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div className="content">
-									<h3>
-										{" "}
-										<Link href="/auction">
-											<a>Industrial Revolution</a>
-										</Link>
-									</h3>
-									<p>
-										<i className="ri-heart-line"></i> 142
-									</p>
-									<div className="auction-card-content">
-										<div className="card-left">
-											<span>Start Bid</span>
-											<h4>14,00 ETH</h4>
-										</div>
-										<div className="card-right">
-											<span>Highest Bid</span>
-											<h4>11,00 ETH</h4>
-										</div>
-									</div>
-									<Link href="/add-wallet">
-										<a className="place-btn">Place Bid</a>
-									</Link>
-								</div>
-							</div>
-						</div>
-
-						<div className="col-lg-4 col-md-6">
-							<div className="auction-card">
-								<div className="auction-card-img">
-									<Link href="/auction">
-										<a>
-											<img
-												src="../images/auctions/auctions-style4.jpg"
-												alt="Images"
-											/>
-										</a>
-									</Link>
-									<div className="auction-card-user">
-										<Link href="/profile">
-											<a className="auction-card-user-option">
-												<img
-													src="../images/auctions/auctions-user4.jpg"
-													alt="Images"
-												/>
-												<span>Created by @Jekob</span>
-											</a>
-										</Link>
-									</div>
-									<div className="auction-card-into">
-										<h3>Remaining Time</h3>
-										<div className="auction-timer">
-											<div
-												className="auction-title"
-												data-countdown="2021/10/10"
-											>
-												{days}:{hours}:{minutes}:
-												{seconds}
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div className="content">
-									<h3>
-										{" "}
-										<Link href="/auction">
-											<a>Become On Nature</a>
-										</Link>
-									</h3>
-									<p>
-										<i className="ri-heart-line"></i> 142
-									</p>
-									<div className="auction-card-content">
-										<div className="card-left">
-											<span>Start Bid</span>
-											<h4>17,00 ETH</h4>
-										</div>
-										<div className="card-right">
-											<span>Highest Bid</span>
-											<h4>13,00 ETH</h4>
-										</div>
-									</div>
-									<Link href="/add-wallet">
-										<a className="place-btn">Place Bid</a>
-									</Link>
-								</div>
-							</div>
-						</div>
-
-						<div className="col-lg-4 col-md-6">
-							<div className="auction-card">
-								<div className="auction-card-img">
-									<Link href="/auction">
-										<a>
-											<img
-												src="../images/auctions/auctions-style5.jpg"
-												alt="Images"
-											/>
-										</a>
-									</Link>
-									<div className="auction-card-user">
-										<Link href="/profile">
-											<a className="auction-card-user-option">
-												<img
-													src="../images/auctions/auctions-user5.jpg"
-													alt="Images"
-												/>
-												<span>Created by @Emilia</span>
-											</a>
-										</Link>
-									</div>
-									<div className="auction-card-into">
-										<h3>Remaining Time</h3>
-										<div className="auction-timer">
-											<div
-												className="auction-title"
-												data-countdown="2021/11/11"
-											>
-												{days}:{hours}:{minutes}:
-												{seconds}
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div className="content">
-									<h3>
-										{" "}
-										<Link href="/auction">
-											<a>Flowers In Concrete</a>
-										</Link>
-									</h3>
-									<p>
-										<i className="ri-heart-line"></i> 172
-									</p>
-									<div className="auction-card-content">
-										<div className="card-left">
-											<span>Start Bid</span>
-											<h4>16,00 ETH</h4>
-										</div>
-										<div className="card-right">
-											<span>Highest Bid</span>
-											<h4>12,00 ETH</h4>
-										</div>
-									</div>
-									<Link href="/add-wallet">
-										<a className="place-btn">Place Bid</a>
-									</Link>
-								</div>
-							</div>
-						</div>
-
-						<div className="col-lg-4 col-md-6">
-							<div className="auction-card">
-								<div className="auction-card-img">
-									<Link href="/auction">
-										<a>
-											<img
-												src="../images/auctions/auctions-style6.jpg"
-												alt="Images"
-											/>
-										</a>
-									</Link>
-									<div className="auction-card-user">
-										<Link href="/profile">
-											<a className="auction-card-user-option">
-												<img
-													src="../images/auctions/auctions-user6.jpg"
-													alt="Images"
-												/>
-												<span>Created by @Jekob</span>
-											</a>
-										</Link>
-									</div>
-									<div className="auction-card-into">
-										<h3>Remaining Time</h3>
-										<div className="auction-timer">
-											<div
-												className="auction-title"
-												data-countdown="2021/10/10"
-											>
-												{days}:{hours}:{minutes}:
-												{seconds}
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div className="content">
-									<h3>
-										{" "}
-										<Link href="/auction">
-											<a>Darklight Angel</a>
-										</Link>
-									</h3>
-									<p>
-										<i className="ri-heart-line"></i> 182
-									</p>
-									<div className="auction-card-content">
-										<div className="card-left">
-											<span>Start Bid</span>
-											<h4>14,00 ETH</h4>
-										</div>
-										<div className="card-right">
-											<span>Highest Bid</span>
-											<h4>11,00 ETH</h4>
-										</div>
-									</div>
-									<Link href="/add-wallet">
-										<a className="place-btn">Place Bid</a>
-									</Link>
-								</div>
-							</div>
-						</div>
-
+					))}
 						<Pagination />
 					</div>
 				</div>
