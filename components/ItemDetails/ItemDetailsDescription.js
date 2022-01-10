@@ -110,7 +110,7 @@ const ItemDetailsDescription = ({ id }) => {
         </Link>
 
         <Link href={url}>
-          <a className="default-btn border-radius-50">
+          <a className="default-btn border-radius-50 mt-2">
             Place Fragmented Arts
           </a>
         </Link>
