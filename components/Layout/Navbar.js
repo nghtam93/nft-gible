@@ -6,6 +6,7 @@ import {
   openWallet,
   disconnectWallet,
 } from "../../redux/actions/walletActions";
+import { MobileView } from 'react-device-detect';
 
 const Navbar = ({ wallet, openWallet, disconnectWallet }) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -42,6 +43,7 @@ const Navbar = ({ wallet, openWallet, disconnectWallet }) => {
     window.localStorage.removeItem("connectorIdv2");
     disconnectWallet();
   };
+
   return (
     <>
       <div className={sticky ? "is-sticky navbar-area" : "navbar-area"}>
@@ -61,7 +63,10 @@ const Navbar = ({ wallet, openWallet, disconnectWallet }) => {
               <div className="logo">
                 <Link href="/">
                   <a>
-                    <img src="../images/logo.png" alt="logo" />
+                    {MobileView ?
+                      <img src="../images/logo-2.png" alt="logo" />:
+                      <img src="../images/logo.png" alt="logo" />
+                    }
                   </a>
                 </Link>
               </div>

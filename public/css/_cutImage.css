@@ -16,8 +16,8 @@ td {
   font-weight: bold;
 }
 
-.border {
-  border: 5.1px solid #f30106 !important;
+.border-select {
+  border: 6px solid #f30106 !important;
 }
 
 .featured-card-img img {

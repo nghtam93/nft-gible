@@ -55,7 +55,7 @@ const CutImage = ({ id }) => {
                       {item.row.map((child, idx) => (
                         <th
                           onClick={() => setCurrent(child.id)}
-                          className={child.id == current ? "border" : ""}
+                          className={child.id == current ? "border-select" : ""}
                         >
                           {child.child}
                         </th>
